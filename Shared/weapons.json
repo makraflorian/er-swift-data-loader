@@ -1,0 +1,3284 @@
+[
+  {
+    "weaponId": 1000000,
+    "name": "Dagger",
+    "sortId": 1000000,
+    "affinityId": 100
+  },
+  {
+    "weaponId": 1010000,
+    "name": "Black Knife",
+    "sortId": 1015000,
+    "affinityId": 101
+  },
+  {
+    "weaponId": 1020000,
+    "name": "Parrying Dagger",
+    "sortId": 1001000,
+    "affinityId": 102
+  },
+  {
+    "weaponId": 1030000,
+    "name": "Miséricorde",
+    "sortId": 1002000,
+    "affinityId": 103
+  },
+  {
+    "weaponId": 1040000,
+    "name": "Reduvia",
+    "sortId": 1013000,
+    "affinityId": 104
+  },
+  {
+    "weaponId": 1050000,
+    "name": "Crystal Knife",
+    "sortId": 1009000,
+    "affinityId": 105
+  },
+  {
+    "weaponId": 1060000,
+    "name": "Celebrant's Sickle",
+    "sortId": 1007000,
+    "affinityId": 106
+  },
+  {
+    "weaponId": 1070000,
+    "name": "Glintstone Kris",
+    "sortId": 1012000,
+    "affinityId": 107
+  },
+  {
+    "weaponId": 1080000,
+    "name": "Scorpion's Stinger",
+    "sortId": 1010000,
+    "affinityId": 108
+  },
+  {
+    "weaponId": 1090000,
+    "name": "Great Knife",
+    "sortId": 1003000,
+    "affinityId": 109
+  },
+  {
+    "weaponId": 1100000,
+    "name": "Wakizashi",
+    "sortId": 1006000,
+    "affinityId": 110
+  },
+  {
+    "weaponId": 1110000,
+    "name": "Cinquedea",
+    "sortId": 1011000,
+    "affinityId": 111
+  },
+  {
+    "weaponId": 1130000,
+    "name": "Ivory Sickle",
+    "sortId": 1008000,
+    "affinityId": 113
+  },
+  {
+    "weaponId": 1140000,
+    "name": "Bloodstained Dagger",
+    "sortId": 1004000,
+    "affinityId": 114
+  },
+  {
+    "weaponId": 1150000,
+    "name": "Erdsteel Dagger",
+    "sortId": 1005000,
+    "affinityId": 115
+  },
+  {
+    "weaponId": 1160000,
+    "name": "Blade of Calling",
+    "sortId": 1014000,
+    "affinityId": 116
+  },
+  {
+    "weaponId": 1500000,
+    "name": "Main-gauche",
+    "sortId": 1006500,
+    "affinityId": 150
+  },
+  {
+    "weaponId": 1510000,
+    "name": "Fire Knight's Shortsword",
+    "sortId": 1005500,
+    "affinityId": 151
+  },
+  {
+    "weaponId": 2000000,
+    "name": "Longsword",
+    "sortId": 1101000,
+    "affinityId": 200
+  },
+  {
+    "weaponId": 2010000,
+    "name": "Short Sword",
+    "sortId": 1100000,
+    "affinityId": 201
+  },
+  {
+    "weaponId": 2020000,
+    "name": "Broadsword",
+    "sortId": 1102000,
+    "affinityId": 202
+  },
+  {
+    "weaponId": 2040000,
+    "name": "Lordsworn's Straight Sword",
+    "sortId": 1104000,
+    "affinityId": 204
+  },
+  {
+    "weaponId": 2050000,
+    "name": "Weathered Straight Sword",
+    "sortId": 1103000,
+    "affinityId": 205
+  },
+  {
+    "weaponId": 2060000,
+    "name": "Ornamental Straight Sword",
+    "sortId": 1113000,
+    "affinityId": 206
+  },
+  {
+    "weaponId": 2070000,
+    "name": "Golden Epitaph",
+    "sortId": 1114000,
+    "affinityId": 207
+  },
+  {
+    "weaponId": 2080000,
+    "name": "Nox Flowing Sword",
+    "sortId": 1612000,
+    "affinityId": 208
+  },
+  {
+    "weaponId": 2090000,
+    "name": "Inseparable Sword",
+    "sortId": 1210000,
+    "affinityId": 209
+  },
+  {
+    "weaponId": 2110000,
+    "name": "Coded Sword",
+    "sortId": 1117000,
+    "affinityId": 211
+  },
+  {
+    "weaponId": 2140000,
+    "name": "Sword of Night and Flame",
+    "sortId": 1118000,
+    "affinityId": 214
+  },
+  {
+    "weaponId": 2150000,
+    "name": "Crystal Sword",
+    "sortId": 1110000,
+    "affinityId": 215
+  },
+  {
+    "weaponId": 2180000,
+    "name": "Carian Knight's Sword",
+    "sortId": 1109000,
+    "affinityId": 218
+  },
+  {
+    "weaponId": 2190000,
+    "name": "Sword of St. Trina",
+    "sortId": 1115000,
+    "affinityId": 219
+  },
+  {
+    "weaponId": 2200000,
+    "name": "Miquellan Knight's Sword",
+    "sortId": 1112000,
+    "affinityId": 220
+  },
+  {
+    "weaponId": 2210000,
+    "name": "Cane Sword",
+    "sortId": 1106000,
+    "affinityId": 221
+  },
+  {
+    "weaponId": 2220000,
+    "name": "Regalia of Eochaid",
+    "sortId": 1116000,
+    "affinityId": 222
+  },
+  {
+    "weaponId": 2230000,
+    "name": "Noble's Slender Sword",
+    "sortId": 1105000,
+    "affinityId": 223
+  },
+  {
+    "weaponId": 2240000,
+    "name": "Warhawk's Talon",
+    "sortId": 1107000,
+    "affinityId": 224
+  },
+  {
+    "weaponId": 2250000,
+    "name": "Lazuli Glintstone Sword",
+    "sortId": 1108000,
+    "affinityId": 225
+  },
+  {
+    "weaponId": 2260000,
+    "name": "Rotten Crystal Sword",
+    "sortId": 1111000,
+    "affinityId": 226
+  },
+  {
+    "weaponId": 2510000,
+    "name": "Velvet Sword of St. Trina",
+    "sortId": 1115500,
+    "affinityId": 251
+  },
+  {
+    "weaponId": 2520000,
+    "name": "Star-Lined Sword",
+    "sortId": 1806500,
+    "affinityId": 252
+  },
+  {
+    "weaponId": 2530000,
+    "name": "Carian Sorcery Sword",
+    "sortId": 1407000,
+    "affinityId": 253
+  },
+  {
+    "weaponId": 2540000,
+    "name": "Stone-Sheathed Sword",
+    "sortId": 1106500,
+    "affinityId": 254
+  },
+  {
+    "weaponId": 2550000,
+    "name": "Sword of Light",
+    "sortId": 1119000,
+    "affinityId": 255
+  },
+  {
+    "weaponId": 2560000,
+    "name": "Sword of Darkness",
+    "sortId": 1120000,
+    "affinityId": 256
+  },
+  {
+    "weaponId": 3000000,
+    "name": "Bastard Sword",
+    "sortId": 1200000,
+    "affinityId": 300
+  },
+  {
+    "weaponId": 3010000,
+    "name": "Forked Greatsword",
+    "sortId": 1206000,
+    "affinityId": 301
+  },
+  {
+    "weaponId": 3020000,
+    "name": "Iron Greatsword",
+    "sortId": 1202000,
+    "affinityId": 302
+  },
+  {
+    "weaponId": 3030000,
+    "name": "Lordsworn's Greatsword",
+    "sortId": 1203000,
+    "affinityId": 303
+  },
+  {
+    "weaponId": 3040000,
+    "name": "Knight's Greatsword",
+    "sortId": 1204000,
+    "affinityId": 304
+  },
+  {
+    "weaponId": 3050000,
+    "name": "Flamberge",
+    "sortId": 1207000,
+    "affinityId": 305
+  },
+  {
+    "weaponId": 3060000,
+    "name": "Ordovis's Greatsword",
+    "sortId": 1213000,
+    "affinityId": 306
+  },
+  {
+    "weaponId": 3070000,
+    "name": "Alabaster Lord's Sword",
+    "sortId": 1214000,
+    "affinityId": 307
+  },
+  {
+    "weaponId": 3080000,
+    "name": "Banished Knight's Greatsword",
+    "sortId": 1205000,
+    "affinityId": 308
+  },
+  {
+    "weaponId": 3090000,
+    "name": "Dark Moon Greatsword",
+    "sortId": 1219000,
+    "affinityId": 309
+  },
+  {
+    "weaponId": 3100000,
+    "name": "Sacred Relic Sword",
+    "sortId": 1220000,
+    "affinityId": 310
+  },
+  {
+    "weaponId": 3130000,
+    "name": "Helphen's Steeple",
+    "sortId": 1216000,
+    "affinityId": 313
+  },
+  {
+    "weaponId": 3140000,
+    "name": "Blasphemous Blade",
+    "sortId": 1217000,
+    "affinityId": 314
+  },
+  {
+    "weaponId": 3150000,
+    "name": "Marais Executioner's Sword",
+    "sortId": 1212000,
+    "affinityId": 315
+  },
+  {
+    "weaponId": 3160000,
+    "name": "Sword of Milos",
+    "sortId": 1211000,
+    "affinityId": 316
+  },
+  {
+    "weaponId": 3170000,
+    "name": "Golden Order Greatsword",
+    "sortId": 1218000,
+    "affinityId": 317
+  },
+  {
+    "weaponId": 3180000,
+    "name": "Claymore",
+    "sortId": 1201000,
+    "affinityId": 318
+  },
+  {
+    "weaponId": 3190000,
+    "name": "Gargoyle's Greatsword",
+    "sortId": 1208000,
+    "affinityId": 319
+  },
+  {
+    "weaponId": 3200000,
+    "name": "Death's Poker",
+    "sortId": 1215000,
+    "affinityId": 320
+  },
+  {
+    "weaponId": 3210000,
+    "name": "Gargoyle's Blackblade",
+    "sortId": 1209000,
+    "affinityId": 321
+  },
+  {
+    "weaponId": 3220000,
+    "name": "Dungeater's Sword of Milos",
+    "sortId": 9999999,
+    "affinityId": 322
+  },
+  {
+    "weaponId": 3500000,
+    "name": "Sword Lance",
+    "sortId": 1504000,
+    "affinityId": 350
+  },
+  {
+    "weaponId": 3510000,
+    "name": "Greatsword of Damnation",
+    "sortId": 1219500,
+    "affinityId": 351
+  },
+  {
+    "weaponId": 3520000,
+    "name": "Lizard Greatsword",
+    "sortId": 1206500,
+    "affinityId": 352
+  },
+  {
+    "weaponId": 3550000,
+    "name": "Greatsword of Solitude",
+    "sortId": 1212500,
+    "affinityId": 355
+  },
+  {
+    "weaponId": 4000000,
+    "name": "Greatsword",
+    "sortId": 1301000,
+    "affinityId": 400
+  },
+  {
+    "weaponId": 4010000,
+    "name": "Watchdog's Greatsword",
+    "sortId": 1302000,
+    "affinityId": 401
+  },
+  {
+    "weaponId": 4020000,
+    "name": "Maliketh's Black Blade",
+    "sortId": 1310000,
+    "affinityId": 402
+  },
+  {
+    "weaponId": 4030000,
+    "name": "Troll's Golden Sword",
+    "sortId": 1303000,
+    "affinityId": 403
+  },
+  {
+    "weaponId": 4040000,
+    "name": "Zweihander",
+    "sortId": 1300000,
+    "affinityId": 404
+  },
+  {
+    "weaponId": 4050000,
+    "name": "Starscourge Greatsword",
+    "sortId": 1308000,
+    "affinityId": 405
+  },
+  {
+    "weaponId": 4060000,
+    "name": "Royal Greatsword",
+    "sortId": 1305000,
+    "affinityId": 406
+  },
+  {
+    "weaponId": 4070000,
+    "name": "Godslayer's Greatsword",
+    "sortId": 1309000,
+    "affinityId": 407
+  },
+  {
+    "weaponId": 4080000,
+    "name": "Ruins Greatsword",
+    "sortId": 1307000,
+    "affinityId": 408
+  },
+  {
+    "weaponId": 4100000,
+    "name": "Grafted Blade Greatsword",
+    "sortId": 1306000,
+    "affinityId": 410
+  },
+  {
+    "weaponId": 4110000,
+    "name": "Troll Knight's Sword",
+    "sortId": 1304000,
+    "affinityId": 411
+  },
+  {
+    "weaponId": 4500000,
+    "name": "Ancient Meteoric Ore Greatsword",
+    "sortId": 1307500,
+    "affinityId": 450
+  },
+  {
+    "weaponId": 4520000,
+    "name": "Fire Knight's Greatsword",
+    "sortId": 1302500,
+    "affinityId": 452
+  },
+  {
+    "weaponId": 4530000,
+    "name": "Greatsword of Radahn (Lord)",
+    "sortId": 1308500,
+    "affinityId": 453
+  },
+  {
+    "weaponId": 4540000,
+    "name": "Moonrithyll's Knight Sword",
+    "sortId": 1304500,
+    "affinityId": 454
+  },
+  {
+    "weaponId": 4550000,
+    "name": "Greatsword of Radahn (Light)",
+    "sortId": 1308700,
+    "affinityId": 455
+  },
+  {
+    "weaponId": 5000000,
+    "name": "Estoc",
+    "sortId": 1401000,
+    "affinityId": 500
+  },
+  {
+    "weaponId": 5010000,
+    "name": "Cleanrot Knight's Sword",
+    "sortId": 1403000,
+    "affinityId": 501
+  },
+  {
+    "weaponId": 5020000,
+    "name": "Rapier",
+    "sortId": 1400000,
+    "affinityId": 502
+  },
+  {
+    "weaponId": 5030000,
+    "name": "Rogier's Rapier",
+    "sortId": 1404000,
+    "affinityId": 503
+  },
+  {
+    "weaponId": 5040000,
+    "name": "Antspur Rapier",
+    "sortId": 1405000,
+    "affinityId": 504
+  },
+  {
+    "weaponId": 5050000,
+    "name": "Frozen Needle",
+    "sortId": 1406000,
+    "affinityId": 505
+  },
+  {
+    "weaponId": 5060000,
+    "name": "Noble's Estoc",
+    "sortId": 1402000,
+    "affinityId": 506
+  },
+  {
+    "weaponId": 6000000,
+    "name": "Bloody Helice",
+    "sortId": 1502000,
+    "affinityId": 600
+  },
+  {
+    "weaponId": 6010000,
+    "name": "Godskin Stitcher",
+    "sortId": 1501000,
+    "affinityId": 601
+  },
+  {
+    "weaponId": 6020000,
+    "name": "Great Épée",
+    "sortId": 1500000,
+    "affinityId": 602
+  },
+  {
+    "weaponId": 6040000,
+    "name": "Dragon King's Cragblade",
+    "sortId": 1503000,
+    "affinityId": 604
+  },
+  {
+    "weaponId": 6500000,
+    "name": "Queelign's Greatsword",
+    "sortId": 1501500,
+    "affinityId": 650
+  },
+  {
+    "weaponId": 7000000,
+    "name": "Falchion",
+    "sortId": 1601000,
+    "affinityId": 700
+  },
+  {
+    "weaponId": 7010000,
+    "name": "Beastman's Curved Sword",
+    "sortId": 1608000,
+    "affinityId": 701
+  },
+  {
+    "weaponId": 7020000,
+    "name": "Shotel",
+    "sortId": 1605000,
+    "affinityId": 702
+  },
+  {
+    "weaponId": 7030000,
+    "name": "Shamshir",
+    "sortId": 1602000,
+    "affinityId": 703
+  },
+  {
+    "weaponId": 7040000,
+    "name": "Bandit's Curved Sword",
+    "sortId": 1604000,
+    "affinityId": 704
+  },
+  {
+    "weaponId": 7050000,
+    "name": "Magma Blade",
+    "sortId": 1611000,
+    "affinityId": 705
+  },
+  {
+    "weaponId": 7060000,
+    "name": "Flowing Curved Sword",
+    "sortId": 1609000,
+    "affinityId": 706
+  },
+  {
+    "weaponId": 7070000,
+    "name": "Wing of Astel",
+    "sortId": 1613000,
+    "affinityId": 707
+  },
+  {
+    "weaponId": 7080000,
+    "name": "Scavenger's Curved Sword",
+    "sortId": 1606000,
+    "affinityId": 708
+  },
+  {
+    "weaponId": 7100000,
+    "name": "Eclipse Shotel",
+    "sortId": 1614000,
+    "affinityId": 710
+  },
+  {
+    "weaponId": 7110000,
+    "name": "Serpent-God's Curved Sword",
+    "sortId": 1610000,
+    "affinityId": 711
+  },
+  {
+    "weaponId": 7120000,
+    "name": "Mantis Blade",
+    "sortId": 1607000,
+    "affinityId": 712
+  },
+  {
+    "weaponId": 7140000,
+    "name": "Scimitar",
+    "sortId": 1600000,
+    "affinityId": 714
+  },
+  {
+    "weaponId": 7150000,
+    "name": "Grossmesser",
+    "sortId": 1603000,
+    "affinityId": 715
+  },
+  {
+    "weaponId": 7500000,
+    "name": "Spirit Sword",
+    "sortId": 1611500,
+    "affinityId": 750
+  },
+  {
+    "weaponId": 7510000,
+    "name": "Falx",
+    "sortId": 1613200,
+    "affinityId": 751
+  },
+  {
+    "weaponId": 7520000,
+    "name": "Dancing Blade of Ranah",
+    "sortId": 1613300,
+    "affinityId": 752
+  },
+  {
+    "weaponId": 7530000,
+    "name": "Horned Warrior's Sword",
+    "sortId": 1613400,
+    "affinityId": 753
+  },
+  {
+    "weaponId": 8010000,
+    "name": "Onyx Lord's Greatsword",
+    "sortId": 1705000,
+    "affinityId": 801
+  },
+  {
+    "weaponId": 8020000,
+    "name": "Dismounter",
+    "sortId": 1700000,
+    "affinityId": 802
+  },
+  {
+    "weaponId": 8030000,
+    "name": "Bloodhound's Fang",
+    "sortId": 1704000,
+    "affinityId": 803
+  },
+  {
+    "weaponId": 8040000,
+    "name": "Magma Wyrm's Scalesword",
+    "sortId": 1707000,
+    "affinityId": 804
+  },
+  {
+    "weaponId": 8050000,
+    "name": "Zamor Curved Sword",
+    "sortId": 1706000,
+    "affinityId": 805
+  },
+  {
+    "weaponId": 8060000,
+    "name": "Omen Cleaver",
+    "sortId": 1701000,
+    "affinityId": 806
+  },
+  {
+    "weaponId": 8070000,
+    "name": "Monk's Flameblade",
+    "sortId": 1702000,
+    "affinityId": 807
+  },
+  {
+    "weaponId": 8080000,
+    "name": "Beastman's Cleaver",
+    "sortId": 1703000,
+    "affinityId": 808
+  },
+  {
+    "weaponId": 8100000,
+    "name": "Morgott's Cursed Sword",
+    "sortId": 1708000,
+    "affinityId": 810
+  },
+  {
+    "weaponId": 8500000,
+    "name": "Putrescence Cleaver",
+    "sortId": 2111000,
+    "affinityId": 850
+  },
+  {
+    "weaponId": 8510000,
+    "name": "Freyja's Greatsword",
+    "sortId": 1703500,
+    "affinityId": 851
+  },
+  {
+    "weaponId": 8520000,
+    "name": "Horned Warrior's Greatsword",
+    "sortId": 1707500,
+    "affinityId": 852
+  },
+  {
+    "weaponId": 9000000,
+    "name": "Uchigatana",
+    "sortId": 1800000,
+    "affinityId": 900
+  },
+  {
+    "weaponId": 9010000,
+    "name": "Nagakiba",
+    "sortId": 1801000,
+    "affinityId": 901
+  },
+  {
+    "weaponId": 9020000,
+    "name": "Hand of Malenia",
+    "sortId": 1807000,
+    "affinityId": 902
+  },
+  {
+    "weaponId": 9030000,
+    "name": "Meteoric Ore Blade",
+    "sortId": 1803000,
+    "affinityId": 903
+  },
+  {
+    "weaponId": 9040000,
+    "name": "Rivers of Blood",
+    "sortId": 1805000,
+    "affinityId": 904
+  },
+  {
+    "weaponId": 9060000,
+    "name": "Moonveil",
+    "sortId": 1804000,
+    "affinityId": 906
+  },
+  {
+    "weaponId": 9070000,
+    "name": "Dragonscale Blade",
+    "sortId": 1806000,
+    "affinityId": 907
+  },
+  {
+    "weaponId": 9080000,
+    "name": "Serpentbone Blade",
+    "sortId": 1802000,
+    "affinityId": 908
+  },
+  {
+    "weaponId": 9500000,
+    "name": "Sword of Night",
+    "sortId": 1804200,
+    "affinityId": 950
+  },
+  {
+    "weaponId": 10000000,
+    "name": "Twinblade",
+    "sortId": 1900000,
+    "affinityId": 1000
+  },
+  {
+    "weaponId": 10010000,
+    "name": "Godskin Peeler",
+    "sortId": 1902000,
+    "affinityId": 1001
+  },
+  {
+    "weaponId": 10030000,
+    "name": "Twinned Knight Swords",
+    "sortId": 1901000,
+    "affinityId": 1003
+  },
+  {
+    "weaponId": 10050000,
+    "name": "Eleonora's Poleblade",
+    "sortId": 1905000,
+    "affinityId": 1005
+  },
+  {
+    "weaponId": 10080000,
+    "name": "Gargoyle's Twinblade",
+    "sortId": 1903000,
+    "affinityId": 1008
+  },
+  {
+    "weaponId": 10090000,
+    "name": "Gargoyle's Black Blades",
+    "sortId": 1904000,
+    "affinityId": 1009
+  },
+  {
+    "weaponId": 10500000,
+    "name": "Euporia",
+    "sortId": 1906000,
+    "affinityId": 1050
+  },
+  {
+    "weaponId": 10510000,
+    "name": "Black Steel Twinblade",
+    "sortId": 1901500,
+    "affinityId": 1051
+  },
+  {
+    "weaponId": 11000000,
+    "name": "Mace",
+    "sortId": 2204000,
+    "affinityId": 1100
+  },
+  {
+    "weaponId": 11010000,
+    "name": "Club",
+    "sortId": 2200000,
+    "affinityId": 1101
+  },
+  {
+    "weaponId": 11030000,
+    "name": "Curved Club",
+    "sortId": 2201000,
+    "affinityId": 1103
+  },
+  {
+    "weaponId": 11040000,
+    "name": "Warpick",
+    "sortId": 2206000,
+    "affinityId": 1104
+  },
+  {
+    "weaponId": 11050000,
+    "name": "Morning Star",
+    "sortId": 2205000,
+    "affinityId": 1105
+  },
+  {
+    "weaponId": 11060000,
+    "name": "Varré's Bouquet",
+    "sortId": 2209000,
+    "affinityId": 1106
+  },
+  {
+    "weaponId": 11070000,
+    "name": "Spiked Club",
+    "sortId": 2202000,
+    "affinityId": 1107
+  },
+  {
+    "weaponId": 11080000,
+    "name": "Hammer",
+    "sortId": 2207000,
+    "affinityId": 1108
+  },
+  {
+    "weaponId": 11090000,
+    "name": "Monk's Flamemace",
+    "sortId": 2208000,
+    "affinityId": 1109
+  },
+  {
+    "weaponId": 11100000,
+    "name": "Envoy's Horn",
+    "sortId": 2210000,
+    "affinityId": 1110
+  },
+  {
+    "weaponId": 11110000,
+    "name": "Scepter of the All-Knowing",
+    "sortId": 2213000,
+    "affinityId": 1111
+  },
+  {
+    "weaponId": 11120000,
+    "name": "Nox Flowing Hammer",
+    "sortId": 2211000,
+    "affinityId": 1112
+  },
+  {
+    "weaponId": 11130000,
+    "name": "Ringed Finger",
+    "sortId": 2212000,
+    "affinityId": 1113
+  },
+  {
+    "weaponId": 11140000,
+    "name": "Stone Club",
+    "sortId": 2203000,
+    "affinityId": 1114
+  },
+  {
+    "weaponId": 11150000,
+    "name": "Marika's Hammer",
+    "sortId": 2214000,
+    "affinityId": 1115
+  },
+  {
+    "weaponId": 11500000,
+    "name": "Flowerstone Gavel",
+    "sortId": 2213500,
+    "affinityId": 1150
+  },
+  {
+    "weaponId": 12000000,
+    "name": "Large Club",
+    "sortId": 2400000,
+    "affinityId": 1200
+  },
+  {
+    "weaponId": 12010000,
+    "name": "Greathorn Hammer",
+    "sortId": 2409000,
+    "affinityId": 1201
+  },
+  {
+    "weaponId": 12020000,
+    "name": "Battle Hammer",
+    "sortId": 2405000,
+    "affinityId": 1202
+  },
+  {
+    "weaponId": 12060000,
+    "name": "Great Mace",
+    "sortId": 2402000,
+    "affinityId": 1206
+  },
+  {
+    "weaponId": 12080000,
+    "name": "Curved Great Club",
+    "sortId": 2401000,
+    "affinityId": 1208
+  },
+  {
+    "weaponId": 12130000,
+    "name": "Celebrant's Skull",
+    "sortId": 2407000,
+    "affinityId": 1213
+  },
+  {
+    "weaponId": 12140000,
+    "name": "Pickaxe",
+    "sortId": 2403000,
+    "affinityId": 1214
+  },
+  {
+    "weaponId": 12150000,
+    "name": "Beastclaw Greathammer",
+    "sortId": 2412000,
+    "affinityId": 1215
+  },
+  {
+    "weaponId": 12160000,
+    "name": "Envoy's Long Horn",
+    "sortId": 2410000,
+    "affinityId": 1216
+  },
+  {
+    "weaponId": 12170000,
+    "name": "Cranial Vessel Candlestand",
+    "sortId": 2411000,
+    "affinityId": 1217
+  },
+  {
+    "weaponId": 12180000,
+    "name": "Great Stars",
+    "sortId": 2408000,
+    "affinityId": 1218
+  },
+  {
+    "weaponId": 12190000,
+    "name": "Brick Hammer",
+    "sortId": 2404000,
+    "affinityId": 1219
+  },
+  {
+    "weaponId": 12200000,
+    "name": "Devourer's Scepter",
+    "sortId": 2413000,
+    "affinityId": 1220
+  },
+  {
+    "weaponId": 12210000,
+    "name": "Rotten Battle Hammer",
+    "sortId": 2406000,
+    "affinityId": 1221
+  },
+  {
+    "weaponId": 12500000,
+    "name": "Smithscript Greathammer",
+    "sortId": 2408200,
+    "affinityId": 1250
+  },
+  {
+    "weaponId": 12510000,
+    "name": "Anvil Hammer",
+    "sortId": 2513100,
+    "affinityId": 1251
+  },
+  {
+    "weaponId": 12520000,
+    "name": "Black Steel Greathammer",
+    "sortId": 2408100,
+    "affinityId": 1252
+  },
+  {
+    "weaponId": 12530000,
+    "name": "Bloodfiend's Arm",
+    "sortId": 2507500,
+    "affinityId": 1253
+  },
+  {
+    "weaponId": 13000000,
+    "name": "Nightrider Flail",
+    "sortId": 2301000,
+    "affinityId": 1300
+  },
+  {
+    "weaponId": 13010000,
+    "name": "Flail",
+    "sortId": 2300000,
+    "affinityId": 1301
+  },
+  {
+    "weaponId": 13020000,
+    "name": "Family Heads",
+    "sortId": 2303000,
+    "affinityId": 1302
+  },
+  {
+    "weaponId": 13030000,
+    "name": "Bastard's Stars",
+    "sortId": 2304000,
+    "affinityId": 1303
+  },
+  {
+    "weaponId": 13040000,
+    "name": "Chainlink Flail",
+    "sortId": 2302000,
+    "affinityId": 1304
+  },
+  {
+    "weaponId": 13500000,
+    "name": "Serpent Flail",
+    "sortId": 2303500,
+    "affinityId": 1350
+  },
+  {
+    "weaponId": 14000000,
+    "name": "Battle Axe",
+    "sortId": 2002000,
+    "affinityId": 1400
+  },
+  {
+    "weaponId": 14010000,
+    "name": "Forked Hatchet",
+    "sortId": 2001000,
+    "affinityId": 1401
+  },
+  {
+    "weaponId": 14020000,
+    "name": "Hand Axe",
+    "sortId": 2000000,
+    "affinityId": 1402
+  },
+  {
+    "weaponId": 14030000,
+    "name": "Jawbone Axe",
+    "sortId": 2004000,
+    "affinityId": 1403
+  },
+  {
+    "weaponId": 14040000,
+    "name": "Iron Cleaver",
+    "sortId": 2005000,
+    "affinityId": 1404
+  },
+  {
+    "weaponId": 14050000,
+    "name": "Ripple Blade",
+    "sortId": 2010000,
+    "affinityId": 1405
+  },
+  {
+    "weaponId": 14060000,
+    "name": "Celebrant's Cleaver",
+    "sortId": 2007000,
+    "affinityId": 1406
+  },
+  {
+    "weaponId": 14080000,
+    "name": "Icerind Hatchet",
+    "sortId": 2009000,
+    "affinityId": 1408
+  },
+  {
+    "weaponId": 14100000,
+    "name": "Highland Axe",
+    "sortId": 2006000,
+    "affinityId": 1410
+  },
+  {
+    "weaponId": 14110000,
+    "name": "Sacrificial Axe",
+    "sortId": 2008000,
+    "affinityId": 1411
+  },
+  {
+    "weaponId": 14120000,
+    "name": "Rosus' Axe",
+    "sortId": 2012000,
+    "affinityId": 1412
+  },
+  {
+    "weaponId": 14140000,
+    "name": "Stormhawk Axe",
+    "sortId": 2011000,
+    "affinityId": 1414
+  },
+  {
+    "weaponId": 14500000,
+    "name": "Smithscript Axe",
+    "sortId": 2006500,
+    "affinityId": 1450
+  },
+  {
+    "weaponId": 14510000,
+    "name": "Death Knight's Twin Axes",
+    "sortId": 2013000,
+    "affinityId": 1451
+  },
+  {
+    "weaponId": 14520000,
+    "name": "Messmer Soldier's Axe",
+    "sortId": 2002500,
+    "affinityId": 1452
+  },
+  {
+    "weaponId": 14540000,
+    "name": "Forked-Tongue Hatchet",
+    "sortId": 2001500,
+    "affinityId": 1454
+  },
+  {
+    "weaponId": 15000000,
+    "name": "Greataxe",
+    "sortId": 2100000,
+    "affinityId": 1500
+  },
+  {
+    "weaponId": 15010000,
+    "name": "Warped Axe",
+    "sortId": 2003000,
+    "affinityId": 1501
+  },
+  {
+    "weaponId": 15020000,
+    "name": "Great Omenkiller Cleaver",
+    "sortId": 2105000,
+    "affinityId": 1502
+  },
+  {
+    "weaponId": 15030000,
+    "name": "Crescent Moon Axe",
+    "sortId": 2101000,
+    "affinityId": 1503
+  },
+  {
+    "weaponId": 15040000,
+    "name": "Axe of Godrick",
+    "sortId": 2110000,
+    "affinityId": 1504
+  },
+  {
+    "weaponId": 15050000,
+    "name": "Longhaft Axe",
+    "sortId": 2102000,
+    "affinityId": 1505
+  },
+  {
+    "weaponId": 15060000,
+    "name": "Rusted Anchor",
+    "sortId": 2106000,
+    "affinityId": 1506
+  },
+  {
+    "weaponId": 15080000,
+    "name": "Executioner's Greataxe",
+    "sortId": 2103000,
+    "affinityId": 1508
+  },
+  {
+    "weaponId": 15110000,
+    "name": "Winged Greathorn",
+    "sortId": 2109000,
+    "affinityId": 1511
+  },
+  {
+    "weaponId": 15120000,
+    "name": "Butchering Knife",
+    "sortId": 2106500,
+    "affinityId": 1512
+  },
+  {
+    "weaponId": 15130000,
+    "name": "Gargoyle's Great Axe",
+    "sortId": 2107000,
+    "affinityId": 1513
+  },
+  {
+    "weaponId": 15140000,
+    "name": "Gargoyle's Black Axe",
+    "sortId": 2108000,
+    "affinityId": 1514
+  },
+  {
+    "weaponId": 15500000,
+    "name": "Death Knight's Longhaft Axe",
+    "sortId": 2108500,
+    "affinityId": 1550
+  },
+  {
+    "weaponId": 15510000,
+    "name": "Bonny Butchering Knife",
+    "sortId": 2106600,
+    "affinityId": 1551
+  },
+  {
+    "weaponId": 16000000,
+    "name": "Short Spear",
+    "sortId": 2600000,
+    "affinityId": 1600
+  },
+  {
+    "weaponId": 16010000,
+    "name": "Spear",
+    "sortId": 2602000,
+    "affinityId": 1601
+  },
+  {
+    "weaponId": 16020000,
+    "name": "Crystal Spear",
+    "sortId": 2611000,
+    "affinityId": 1602
+  },
+  {
+    "weaponId": 16030000,
+    "name": "Clayman's Harpoon",
+    "sortId": 2607000,
+    "affinityId": 1603
+  },
+  {
+    "weaponId": 16040000,
+    "name": "Cleanrot Spear",
+    "sortId": 2613000,
+    "affinityId": 1604
+  },
+  {
+    "weaponId": 16050000,
+    "name": "Partisan",
+    "sortId": 2603000,
+    "affinityId": 1605
+  },
+  {
+    "weaponId": 16060000,
+    "name": "Celebrant's Rib-Rake",
+    "sortId": 2608000,
+    "affinityId": 1606
+  },
+  {
+    "weaponId": 16070000,
+    "name": "Pike",
+    "sortId": 2604000,
+    "affinityId": 1607
+  },
+  {
+    "weaponId": 16080000,
+    "name": "Torchpole",
+    "sortId": 2609000,
+    "affinityId": 1608
+  },
+  {
+    "weaponId": 16090000,
+    "name": "Bolt of Gransax",
+    "sortId": 2615000,
+    "affinityId": 1609
+  },
+  {
+    "weaponId": 16110000,
+    "name": "Cross-Naginata",
+    "sortId": 2606000,
+    "affinityId": 1611
+  },
+  {
+    "weaponId": 16120000,
+    "name": "Death Ritual Spear",
+    "sortId": 2614000,
+    "affinityId": 1612
+  },
+  {
+    "weaponId": 16130000,
+    "name": "Inquisitor's Girandole",
+    "sortId": 2610000,
+    "affinityId": 1613
+  },
+  {
+    "weaponId": 16140000,
+    "name": "Spiked Spear",
+    "sortId": 2605000,
+    "affinityId": 1614
+  },
+  {
+    "weaponId": 16150000,
+    "name": "Iron Spear",
+    "sortId": 2601000,
+    "affinityId": 1615
+  },
+  {
+    "weaponId": 16160000,
+    "name": "Rotten Crystal Spear",
+    "sortId": 2612000,
+    "affinityId": 1616
+  },
+  {
+    "weaponId": 16500000,
+    "name": "Smithscript Spear",
+    "sortId": 2609300,
+    "affinityId": 1650
+  },
+  {
+    "weaponId": 16520000,
+    "name": "Swift Spear",
+    "sortId": 2604500,
+    "affinityId": 1652
+  },
+  {
+    "weaponId": 16540000,
+    "name": "Bloodfiend's Fork",
+    "sortId": 2607500,
+    "affinityId": 1654
+  },
+  {
+    "weaponId": 16550000,
+    "name": "Bloodfiend's Sacred Spear",
+    "sortId": 2704200,
+    "affinityId": 1655
+  },
+  {
+    "weaponId": 17010000,
+    "name": "Mohgwyn's Sacred Spear",
+    "sortId": 2705000,
+    "affinityId": 1701
+  },
+  {
+    "weaponId": 17020000,
+    "name": "Siluria's Tree",
+    "sortId": 2703000,
+    "affinityId": 1702
+  },
+  {
+    "weaponId": 17030000,
+    "name": "Serpent-Hunter",
+    "sortId": 2702000,
+    "affinityId": 1703
+  },
+  {
+    "weaponId": 17050000,
+    "name": "Vyke's War Spear",
+    "sortId": 2704000,
+    "affinityId": 1705
+  },
+  {
+    "weaponId": 17060000,
+    "name": "Lance",
+    "sortId": 2700000,
+    "affinityId": 1706
+  },
+  {
+    "weaponId": 17070000,
+    "name": "Treespear",
+    "sortId": 2701000,
+    "affinityId": 1707
+  },
+  {
+    "weaponId": 17500000,
+    "name": "Spear of the Impaler",
+    "sortId": 2706000,
+    "affinityId": 1750
+  },
+  {
+    "weaponId": 17510000,
+    "name": "Messmer Soldier's Spear",
+    "sortId": 2700500,
+    "affinityId": 1751
+  },
+  {
+    "weaponId": 17520000,
+    "name": "Barbed Staff-Spear",
+    "sortId": 2704100,
+    "affinityId": 1752
+  },
+  {
+    "weaponId": 18000000,
+    "name": "Halberd",
+    "sortId": 2800000,
+    "affinityId": 1800
+  },
+  {
+    "weaponId": 18010000,
+    "name": "Pest's Glaive",
+    "sortId": 2810000,
+    "affinityId": 1801
+  },
+  {
+    "weaponId": 18020000,
+    "name": "Lucerne",
+    "sortId": 2802000,
+    "affinityId": 1802
+  },
+  {
+    "weaponId": 18030000,
+    "name": "Banished Knight's Halberd",
+    "sortId": 2801000,
+    "affinityId": 1803
+  },
+  {
+    "weaponId": 18040000,
+    "name": "Commander's Standard",
+    "sortId": 2815000,
+    "affinityId": 1804
+  },
+  {
+    "weaponId": 18050000,
+    "name": "Nightrider Glaive",
+    "sortId": 2809000,
+    "affinityId": 1805
+  },
+  {
+    "weaponId": 18060000,
+    "name": "Ripple Crescent Halberd",
+    "sortId": 2811000,
+    "affinityId": 1806
+  },
+  {
+    "weaponId": 18070000,
+    "name": "Vulgar Militia Saw",
+    "sortId": 2805000,
+    "affinityId": 1807
+  },
+  {
+    "weaponId": 18080000,
+    "name": "Golden Halberd",
+    "sortId": 2812000,
+    "affinityId": 1808
+  },
+  {
+    "weaponId": 18090000,
+    "name": "Glaive",
+    "sortId": 2803000,
+    "affinityId": 1809
+  },
+  {
+    "weaponId": 18100000,
+    "name": "Loretta's War Sickle",
+    "sortId": 2814000,
+    "affinityId": 1810
+  },
+  {
+    "weaponId": 18110000,
+    "name": "Guardian's Swordspear",
+    "sortId": 2806000,
+    "affinityId": 1811
+  },
+  {
+    "weaponId": 18130000,
+    "name": "Vulgar Militia Shotel",
+    "sortId": 2804000,
+    "affinityId": 1813
+  },
+  {
+    "weaponId": 18140000,
+    "name": "Dragon Halberd",
+    "sortId": 2813000,
+    "affinityId": 1814
+  },
+  {
+    "weaponId": 18150000,
+    "name": "Gargoyle's Halberd",
+    "sortId": 2807000,
+    "affinityId": 1815
+  },
+  {
+    "weaponId": 18160000,
+    "name": "Gargoyle's Black Halberd",
+    "sortId": 2808000,
+    "affinityId": 1816
+  },
+  {
+    "weaponId": 18500000,
+    "name": "Spirit Glaive",
+    "sortId": 2816000,
+    "affinityId": 1850
+  },
+  {
+    "weaponId": 18510000,
+    "name": "Poleblade of the Bud",
+    "sortId": 2817000,
+    "affinityId": 1851
+  },
+  {
+    "weaponId": 19000000,
+    "name": "Scythe",
+    "sortId": 2900000,
+    "affinityId": 1900
+  },
+  {
+    "weaponId": 19010000,
+    "name": "Grave Scythe",
+    "sortId": 2901000,
+    "affinityId": 1901
+  },
+  {
+    "weaponId": 19020000,
+    "name": "Halo Scythe",
+    "sortId": 2902000,
+    "affinityId": 1902
+  },
+  {
+    "weaponId": 19060000,
+    "name": "Winged Scythe",
+    "sortId": 2903000,
+    "affinityId": 1906
+  },
+  {
+    "weaponId": 19500000,
+    "name": "Obsidian Lamina",
+    "sortId": 2904000,
+    "affinityId": 1950
+  },
+  {
+    "weaponId": 20000000,
+    "name": "Whip",
+    "sortId": 3000000,
+    "affinityId": 2000
+  },
+  {
+    "weaponId": 20020000,
+    "name": "Thorned Whip",
+    "sortId": 3001000,
+    "affinityId": 2002
+  },
+  {
+    "weaponId": 20030000,
+    "name": "Magma Whip Candlestick",
+    "sortId": 3004000,
+    "affinityId": 2003
+  },
+  {
+    "weaponId": 20050000,
+    "name": "Hoslow's Petal Whip",
+    "sortId": 3003000,
+    "affinityId": 2005
+  },
+  {
+    "weaponId": 20060000,
+    "name": "Giant's Red Braid",
+    "sortId": 3005000,
+    "affinityId": 2006
+  },
+  {
+    "weaponId": 20070000,
+    "name": "Urumi",
+    "sortId": 3002000,
+    "affinityId": 2007
+  },
+  {
+    "weaponId": 20500000,
+    "name": "Tooth Whip",
+    "sortId": 3003500,
+    "affinityId": 2050
+  },
+  {
+    "weaponId": 21000000,
+    "name": "Caestus",
+    "sortId": 3100000,
+    "affinityId": 2100
+  },
+  {
+    "weaponId": 21010000,
+    "name": "Spiked Caestus",
+    "sortId": 3101000,
+    "affinityId": 2101
+  },
+  {
+    "weaponId": 21060000,
+    "name": "Grafted Dragon",
+    "sortId": 3108000,
+    "affinityId": 2106
+  },
+  {
+    "weaponId": 21070000,
+    "name": "Iron Ball",
+    "sortId": 3103000,
+    "affinityId": 2107
+  },
+  {
+    "weaponId": 21080000,
+    "name": "Star Fist",
+    "sortId": 3104000,
+    "affinityId": 2108
+  },
+  {
+    "weaponId": 21100000,
+    "name": "Katar",
+    "sortId": 3102000,
+    "affinityId": 2110
+  },
+  {
+    "weaponId": 21110000,
+    "name": "Clinging Bone",
+    "sortId": 3105000,
+    "affinityId": 2111
+  },
+  {
+    "weaponId": 21120000,
+    "name": "Veteran's Prosthesis",
+    "sortId": 3106000,
+    "affinityId": 2112
+  },
+  {
+    "weaponId": 21130000,
+    "name": "Cipher Pata",
+    "sortId": 3107000,
+    "affinityId": 2113
+  },
+  {
+    "weaponId": 21500000,
+    "name": "Thiollier's Hidden Needle",
+    "sortId": 3107300,
+    "affinityId": 2150
+  },
+  {
+    "weaponId": 21510000,
+    "name": "Pata",
+    "sortId": 3102500,
+    "affinityId": 2151
+  },
+  {
+    "weaponId": 21520000,
+    "name": "Poisoned Hand",
+    "sortId": 3107100,
+    "affinityId": 2152
+  },
+  {
+    "weaponId": 21530000,
+    "name": "Madding Hand",
+    "sortId": 3107200,
+    "affinityId": 2153
+  },
+  {
+    "weaponId": 21540000,
+    "name": "Golem Fist",
+    "sortId": 3107400,
+    "affinityId": 2154
+  },
+  {
+    "weaponId": 21550000,
+    "name": "Shield of Night",
+    "sortId": 7118000,
+    "affinityId": 2155
+  },
+  {
+    "weaponId": 22000000,
+    "name": "Hookclaws",
+    "sortId": 3200000,
+    "affinityId": 2200
+  },
+  {
+    "weaponId": 22010000,
+    "name": "Venomous Fang",
+    "sortId": 3202000,
+    "affinityId": 2201
+  },
+  {
+    "weaponId": 22020000,
+    "name": "Bloodhound Claws",
+    "sortId": 3201000,
+    "affinityId": 2202
+  },
+  {
+    "weaponId": 22030000,
+    "name": "Raptor Talons",
+    "sortId": 3203000,
+    "affinityId": 2203
+  },
+  {
+    "weaponId": 22500000,
+    "name": "Claws of Night",
+    "sortId": 3204000,
+    "affinityId": 2250
+  },
+  {
+    "weaponId": 23000000,
+    "name": "Prelate's Inferno Crozier",
+    "sortId": 2504500,
+    "affinityId": 2300
+  },
+  {
+    "weaponId": 23010000,
+    "name": "Watchdog's Staff",
+    "sortId": 2508000,
+    "affinityId": 2301
+  },
+  {
+    "weaponId": 23020000,
+    "name": "Great Club",
+    "sortId": 2505000,
+    "affinityId": 2302
+  },
+  {
+    "weaponId": 23030000,
+    "name": "Envoy's Greathorn",
+    "sortId": 2511000,
+    "affinityId": 2303
+  },
+  {
+    "weaponId": 23040000,
+    "name": "Duelist Greataxe",
+    "sortId": 2500000,
+    "affinityId": 2304
+  },
+  {
+    "weaponId": 23050000,
+    "name": "Axe of Godfrey",
+    "sortId": 2514000,
+    "affinityId": 2305
+  },
+  {
+    "weaponId": 23060000,
+    "name": "Dragon Greatclaw",
+    "sortId": 2507000,
+    "affinityId": 2306
+  },
+  {
+    "weaponId": 23070000,
+    "name": "Staff of the Avatar",
+    "sortId": 2509000,
+    "affinityId": 2307
+  },
+  {
+    "weaponId": 23080000,
+    "name": "Fallingstar Beast Jaw",
+    "sortId": 2513000,
+    "affinityId": 2308
+  },
+  {
+    "weaponId": 23100000,
+    "name": "Ghiza's Wheel",
+    "sortId": 2512000,
+    "affinityId": 2310
+  },
+  {
+    "weaponId": 23110000,
+    "name": "Giant-Crusher",
+    "sortId": 2504000,
+    "affinityId": 2311
+  },
+  {
+    "weaponId": 23120000,
+    "name": "Golem's Halberd",
+    "sortId": 2502000,
+    "affinityId": 2312
+  },
+  {
+    "weaponId": 23130000,
+    "name": "Troll's Hammer",
+    "sortId": 2506000,
+    "affinityId": 2313
+  },
+  {
+    "weaponId": 23140000,
+    "name": "Rotten Staff",
+    "sortId": 2510000,
+    "affinityId": 2314
+  },
+  {
+    "weaponId": 23150000,
+    "name": "Rotten Greataxe",
+    "sortId": 2501000,
+    "affinityId": 2315
+  },
+  {
+    "weaponId": 23500000,
+    "name": "Devonia's Hammer",
+    "sortId": 2513200,
+    "affinityId": 2350
+  },
+  {
+    "weaponId": 23510000,
+    "name": "Shadow Sunflower Blossom",
+    "sortId": 2516000,
+    "affinityId": 2351
+  },
+  {
+    "weaponId": 23520000,
+    "name": "Gazing Finger",
+    "sortId": 2517000,
+    "affinityId": 2352
+  },
+  {
+    "weaponId": 24000000,
+    "name": "Torch",
+    "sortId": 7000000,
+    "affinityId": 2400
+  },
+  {
+    "weaponId": 24020000,
+    "name": "Steel-Wire Torch",
+    "sortId": 7002000,
+    "affinityId": 2402
+  },
+  {
+    "weaponId": 24040000,
+    "name": "St. Trina's Torch",
+    "sortId": 7005000,
+    "affinityId": 2404
+  },
+  {
+    "weaponId": 24050000,
+    "name": "Ghostflame Torch",
+    "sortId": 7004000,
+    "affinityId": 2405
+  },
+  {
+    "weaponId": 24060000,
+    "name": "Beast-Repellent Torch",
+    "sortId": 7001000,
+    "affinityId": 2406
+  },
+  {
+    "weaponId": 24070000,
+    "name": "Sentry's Torch",
+    "sortId": 7003000,
+    "affinityId": 2407
+  },
+  {
+    "weaponId": 24500000,
+    "name": "Nanaya's Torch",
+    "sortId": 7006000,
+    "affinityId": 2450
+  },
+  {
+    "weaponId": 24510000,
+    "name": "Lamenting Visage",
+    "sortId": 7007000,
+    "affinityId": 2451
+  },
+  {
+    "weaponId": 30000000,
+    "name": "Buckler",
+    "sortId": 7106000,
+    "affinityId": 3000
+  },
+  {
+    "weaponId": 30010000,
+    "name": "Perfumer's Shield",
+    "sortId": 7112000,
+    "affinityId": 3001
+  },
+  {
+    "weaponId": 30020000,
+    "name": "Man-Serpent's Shield",
+    "sortId": 7109000,
+    "affinityId": 3002
+  },
+  {
+    "weaponId": 30030000,
+    "name": "Rickety Shield",
+    "sortId": 7100000,
+    "affinityId": 3003
+  },
+  {
+    "weaponId": 30040000,
+    "name": "Pillory Shield",
+    "sortId": 7105000,
+    "affinityId": 3004
+  },
+  {
+    "weaponId": 30060000,
+    "name": "Beastman's Jar-Shield",
+    "sortId": 7223000,
+    "affinityId": 3006
+  },
+  {
+    "weaponId": 30070000,
+    "name": "Red Thorn Roundshield",
+    "sortId": 7104000,
+    "affinityId": 3007
+  },
+  {
+    "weaponId": 30080000,
+    "name": "Scripture Wooden Shield",
+    "sortId": 7103000,
+    "affinityId": 3008
+  },
+  {
+    "weaponId": 30090000,
+    "name": "Riveted Wooden Shield",
+    "sortId": 7101000,
+    "affinityId": 3009
+  },
+  {
+    "weaponId": 30100000,
+    "name": "Blue-White Wooden Shield",
+    "sortId": 7102000,
+    "affinityId": 3010
+  },
+  {
+    "weaponId": 30110000,
+    "name": "Rift Shield",
+    "sortId": 7111000,
+    "affinityId": 3011
+  },
+  {
+    "weaponId": 30120000,
+    "name": "Iron Roundshield",
+    "sortId": 7107000,
+    "affinityId": 3012
+  },
+  {
+    "weaponId": 30130000,
+    "name": "Gilded Iron Shield",
+    "sortId": 7108000,
+    "affinityId": 3013
+  },
+  {
+    "weaponId": 30140000,
+    "name": "Ice Crest Shield",
+    "sortId": 7110000,
+    "affinityId": 3014
+  },
+  {
+    "weaponId": 30150000,
+    "name": "Smoldering Shield",
+    "sortId": 7115000,
+    "affinityId": 3015
+  },
+  {
+    "weaponId": 30190000,
+    "name": "Spiralhorn Shield",
+    "sortId": 7114000,
+    "affinityId": 3019
+  },
+  {
+    "weaponId": 30200000,
+    "name": "Coil Shield",
+    "sortId": 7116000,
+    "affinityId": 3020
+  },
+  {
+    "weaponId": 30510000,
+    "name": "Smithscript Shield",
+    "sortId": 7117000,
+    "affinityId": 3051
+  },
+  {
+    "weaponId": 31000000,
+    "name": "Kite Shield",
+    "sortId": 7216000,
+    "affinityId": 3100
+  },
+  {
+    "weaponId": 31010000,
+    "name": "Marred Leather Shield",
+    "sortId": 7209000,
+    "affinityId": 3101
+  },
+  {
+    "weaponId": 31020000,
+    "name": "Marred Wooden Shield",
+    "sortId": 7204000,
+    "affinityId": 3102
+  },
+  {
+    "weaponId": 31030000,
+    "name": "Banished Knight's Shield",
+    "sortId": 7221000,
+    "affinityId": 3103
+  },
+  {
+    "weaponId": 31040000,
+    "name": "Albinauric Shield",
+    "sortId": 7222000,
+    "affinityId": 3104
+  },
+  {
+    "weaponId": 31050000,
+    "name": "Sun Realm Shield",
+    "sortId": 7205000,
+    "affinityId": 3105
+  },
+  {
+    "weaponId": 31060000,
+    "name": "Silver Mirrorshield",
+    "sortId": 7225000,
+    "affinityId": 3106
+  },
+  {
+    "weaponId": 31070000,
+    "name": "Round Shield",
+    "sortId": 7206000,
+    "affinityId": 3107
+  },
+  {
+    "weaponId": 31080000,
+    "name": "Scorpion Kite Shield",
+    "sortId": 7218000,
+    "affinityId": 3108
+  },
+  {
+    "weaponId": 31090000,
+    "name": "Twinbird Kite Shield",
+    "sortId": 7219000,
+    "affinityId": 3109
+  },
+  {
+    "weaponId": 31100000,
+    "name": "Blue-Gold Kite Shield",
+    "sortId": 7217000,
+    "affinityId": 3110
+  },
+  {
+    "weaponId": 31130000,
+    "name": "Brass Shield",
+    "sortId": 7220000,
+    "affinityId": 3113
+  },
+  {
+    "weaponId": 31140000,
+    "name": "Great Turtle Shell",
+    "sortId": 7226000,
+    "affinityId": 3114
+  },
+  {
+    "weaponId": 31170000,
+    "name": "Shield of the Guilty",
+    "sortId": 7113000,
+    "affinityId": 3117
+  },
+  {
+    "weaponId": 31190000,
+    "name": "Carian Knight's Shield",
+    "sortId": 7224000,
+    "affinityId": 3119
+  },
+  {
+    "weaponId": 31230000,
+    "name": "Large Leather Shield",
+    "sortId": 7207000,
+    "affinityId": 3123
+  },
+  {
+    "weaponId": 31240000,
+    "name": "Horse Crest Wooden Shield",
+    "sortId": 7201000,
+    "affinityId": 3124
+  },
+  {
+    "weaponId": 31250000,
+    "name": "Candletree Wooden Shield",
+    "sortId": 7202000,
+    "affinityId": 3125
+  },
+  {
+    "weaponId": 31260000,
+    "name": "Flame Crest Wooden Shield",
+    "sortId": 7203000,
+    "affinityId": 3126
+  },
+  {
+    "weaponId": 31270000,
+    "name": "Hawk Crest Wooden Shield",
+    "sortId": 7200000,
+    "affinityId": 3127
+  },
+  {
+    "weaponId": 31280000,
+    "name": "Beast Crest Heater Shield",
+    "sortId": 7213000,
+    "affinityId": 3128
+  },
+  {
+    "weaponId": 31290000,
+    "name": "Red Crest Heater Shield",
+    "sortId": 7212000,
+    "affinityId": 3129
+  },
+  {
+    "weaponId": 31300000,
+    "name": "Blue Crest Heater Shield",
+    "sortId": 7211000,
+    "affinityId": 3130
+  },
+  {
+    "weaponId": 31310000,
+    "name": "Eclipse Crest Heater Shield",
+    "sortId": 7215000,
+    "affinityId": 3131
+  },
+  {
+    "weaponId": 31320000,
+    "name": "Inverted Hawk Heater Shield",
+    "sortId": 7214000,
+    "affinityId": 3132
+  },
+  {
+    "weaponId": 31330000,
+    "name": "Heater Shield",
+    "sortId": 7210000,
+    "affinityId": 3133
+  },
+  {
+    "weaponId": 31340000,
+    "name": "Black Leather Shield",
+    "sortId": 7208000,
+    "affinityId": 3134
+  },
+  {
+    "weaponId": 31500000,
+    "name": "Messmer Soldier Shield",
+    "sortId": 7220500,
+    "affinityId": 3150
+  },
+  {
+    "weaponId": 31510000,
+    "name": "Wolf Crest Shield",
+    "sortId": 7221100,
+    "affinityId": 3151
+  },
+  {
+    "weaponId": 31520000,
+    "name": "Serpent Crest Shield",
+    "sortId": 7221200,
+    "affinityId": 3152
+  },
+  {
+    "weaponId": 31530000,
+    "name": "Golden Lion Shield",
+    "sortId": 7227000,
+    "affinityId": 3153
+  },
+  {
+    "weaponId": 32000000,
+    "name": "Dragon Towershield",
+    "sortId": 7309000,
+    "affinityId": 3200
+  },
+  {
+    "weaponId": 32020000,
+    "name": "Distinguished Greatshield",
+    "sortId": 7310000,
+    "affinityId": 3202
+  },
+  {
+    "weaponId": 32030000,
+    "name": "Crucible Hornshield",
+    "sortId": 7316000,
+    "affinityId": 3203
+  },
+  {
+    "weaponId": 32040000,
+    "name": "Dragonclaw Shield",
+    "sortId": 7317000,
+    "affinityId": 3204
+  },
+  {
+    "weaponId": 32050000,
+    "name": "Briar Greatshield",
+    "sortId": 7302000,
+    "affinityId": 3205
+  },
+  {
+    "weaponId": 32080000,
+    "name": "Erdtree Greatshield",
+    "sortId": 7321000,
+    "affinityId": 3208
+  },
+  {
+    "weaponId": 32090000,
+    "name": "Golden Beast Crest Shield",
+    "sortId": 7305000,
+    "affinityId": 3209
+  },
+  {
+    "weaponId": 32120000,
+    "name": "Jellyfish Shield",
+    "sortId": 7322000,
+    "affinityId": 3212
+  },
+  {
+    "weaponId": 32130000,
+    "name": "Fingerprint Stone Shield",
+    "sortId": 7318000,
+    "affinityId": 3213
+  },
+  {
+    "weaponId": 32140000,
+    "name": "Icon Shield",
+    "sortId": 7304000,
+    "affinityId": 3214
+  },
+  {
+    "weaponId": 32150000,
+    "name": "One-Eyed Shield",
+    "sortId": 7324000,
+    "affinityId": 3215
+  },
+  {
+    "weaponId": 32160000,
+    "name": "Visage Shield",
+    "sortId": 7323000,
+    "affinityId": 3216
+  },
+  {
+    "weaponId": 32170000,
+    "name": "Spiked Palisade Shield",
+    "sortId": 7303000,
+    "affinityId": 3217
+  },
+  {
+    "weaponId": 32190000,
+    "name": "Manor Towershield",
+    "sortId": 7306000,
+    "affinityId": 3219
+  },
+  {
+    "weaponId": 32200000,
+    "name": "Crossed-Tree Towershield",
+    "sortId": 7307000,
+    "affinityId": 3220
+  },
+  {
+    "weaponId": 32210000,
+    "name": "Inverted Hawk Towershield",
+    "sortId": 7308000,
+    "affinityId": 3221
+  },
+  {
+    "weaponId": 32220000,
+    "name": "Ant's Skull Plate",
+    "sortId": 7320000,
+    "affinityId": 3222
+  },
+  {
+    "weaponId": 32230000,
+    "name": "Redmane Greatshield",
+    "sortId": 7313000,
+    "affinityId": 3223
+  },
+  {
+    "weaponId": 32240000,
+    "name": "Eclipse Crest Greatshield",
+    "sortId": 7319000,
+    "affinityId": 3224
+  },
+  {
+    "weaponId": 32250000,
+    "name": "Cuckoo Greatshield",
+    "sortId": 7312000,
+    "affinityId": 3225
+  },
+  {
+    "weaponId": 32260000,
+    "name": "Golden Greatshield",
+    "sortId": 7314000,
+    "affinityId": 3226
+  },
+  {
+    "weaponId": 32270000,
+    "name": "Gilded Greatshield",
+    "sortId": 7311000,
+    "affinityId": 3227
+  },
+  {
+    "weaponId": 32280000,
+    "name": "Haligtree Crest Greatshield",
+    "sortId": 7315000,
+    "affinityId": 3228
+  },
+  {
+    "weaponId": 32290000,
+    "name": "Wooden Greatshield",
+    "sortId": 7300000,
+    "affinityId": 3229
+  },
+  {
+    "weaponId": 32300000,
+    "name": "Lordsworn's Shield",
+    "sortId": 7301000,
+    "affinityId": 3230
+  },
+  {
+    "weaponId": 32500000,
+    "name": "Black Steel Greatshield",
+    "sortId": 7315500,
+    "affinityId": 3250
+  },
+  {
+    "weaponId": 32520000,
+    "name": "Verdigris Greatshield",
+    "sortId": 7326000,
+    "affinityId": 3252
+  },
+  {
+    "weaponId": 33000000,
+    "name": "Glintstone Staff",
+    "sortId": 5501000,
+    "affinityId": 3300
+  },
+  {
+    "weaponId": 33040000,
+    "name": "Crystal Staff",
+    "sortId": 5513000,
+    "affinityId": 3304
+  },
+  {
+    "weaponId": 33050000,
+    "name": "Gelmir Glintstone Staff",
+    "sortId": 5512000,
+    "affinityId": 3305
+  },
+  {
+    "weaponId": 33060000,
+    "name": "Demi-Human Queen's Staff",
+    "sortId": 5504000,
+    "affinityId": 3306
+  },
+  {
+    "weaponId": 33090000,
+    "name": "Carian Regal Scepter",
+    "sortId": 5509000,
+    "affinityId": 3309
+  },
+  {
+    "weaponId": 33120000,
+    "name": "Digger's Staff",
+    "sortId": 5503000,
+    "affinityId": 3312
+  },
+  {
+    "weaponId": 33130000,
+    "name": "Astrologer's Staff",
+    "sortId": 5500000,
+    "affinityId": 3313
+  },
+  {
+    "weaponId": 33170000,
+    "name": "Carian Glintblade Staff",
+    "sortId": 5508000,
+    "affinityId": 3317
+  },
+  {
+    "weaponId": 33180000,
+    "name": "Prince of Death's Staff",
+    "sortId": 5517000,
+    "affinityId": 3318
+  },
+  {
+    "weaponId": 33190000,
+    "name": "Albinauric Staff",
+    "sortId": 5510000,
+    "affinityId": 3319
+  },
+  {
+    "weaponId": 33200000,
+    "name": "Academy Glintstone Staff",
+    "sortId": 5502000,
+    "affinityId": 3320
+  },
+  {
+    "weaponId": 33210000,
+    "name": "Carian Glintstone Staff",
+    "sortId": 5507000,
+    "affinityId": 3321
+  },
+  {
+    "weaponId": 33230000,
+    "name": "Azur's Glintstone Staff",
+    "sortId": 5505000,
+    "affinityId": 3323
+  },
+  {
+    "weaponId": 33240000,
+    "name": "Lusat's Glintstone Staff",
+    "sortId": 5506000,
+    "affinityId": 3324
+  },
+  {
+    "weaponId": 33250000,
+    "name": "Meteorite Staff",
+    "sortId": 5515000,
+    "affinityId": 3325
+  },
+  {
+    "weaponId": 33260000,
+    "name": "Staff of the Guilty",
+    "sortId": 5516000,
+    "affinityId": 3326
+  },
+  {
+    "weaponId": 33270000,
+    "name": "Rotten Crystal Staff",
+    "sortId": 5514000,
+    "affinityId": 3327
+  },
+  {
+    "weaponId": 33280000,
+    "name": "Staff of Loss",
+    "sortId": 5511000,
+    "affinityId": 3328
+  },
+  {
+    "weaponId": 33510000,
+    "name": "Staff of the Great Beyond",
+    "sortId": 5519000,
+    "affinityId": 3351
+  },
+  {
+    "weaponId": 33520000,
+    "name": "Maternal Staff",
+    "sortId": 5518000,
+    "affinityId": 3352
+  },
+  {
+    "weaponId": 34000000,
+    "name": "Finger Seal",
+    "sortId": 5600000,
+    "affinityId": 3400
+  },
+  {
+    "weaponId": 34010000,
+    "name": "Godslayer's Seal",
+    "sortId": 5605000,
+    "affinityId": 3401
+  },
+  {
+    "weaponId": 34020000,
+    "name": "Giant's Seal",
+    "sortId": 5604000,
+    "affinityId": 3402
+  },
+  {
+    "weaponId": 34030000,
+    "name": "Gravel Stone Seal",
+    "sortId": 5603000,
+    "affinityId": 3403
+  },
+  {
+    "weaponId": 34040000,
+    "name": "Clawmark Seal",
+    "sortId": 5606000,
+    "affinityId": 3404
+  },
+  {
+    "weaponId": 34060000,
+    "name": "Golden Order Seal",
+    "sortId": 5602000,
+    "affinityId": 3406
+  },
+  {
+    "weaponId": 34070000,
+    "name": "Erdtree Seal",
+    "sortId": 5601000,
+    "affinityId": 3407
+  },
+  {
+    "weaponId": 34080000,
+    "name": "Dragon Communion Seal",
+    "sortId": 5608000,
+    "affinityId": 3408
+  },
+  {
+    "weaponId": 34090000,
+    "name": "Frenzied Flame Seal",
+    "sortId": 5607000,
+    "affinityId": 3409
+  },
+  {
+    "weaponId": 34500000,
+    "name": "Dryleaf Seal",
+    "sortId": 5602100,
+    "affinityId": 3450
+  },
+  {
+    "weaponId": 34510000,
+    "name": "Fire Knight's Seal",
+    "sortId": 5602200,
+    "affinityId": 3451
+  },
+  {
+    "weaponId": 34520000,
+    "name": "Spiraltree Seal",
+    "sortId": 5602300,
+    "affinityId": 3452
+  },
+  {
+    "weaponId": 40000000,
+    "name": "Shortbow",
+    "sortId": 5000000,
+    "affinityId": 4000
+  },
+  {
+    "weaponId": 40010000,
+    "name": "Misbegotten Shortbow",
+    "sortId": 5003000,
+    "affinityId": 4001
+  },
+  {
+    "weaponId": 40020000,
+    "name": "Red Branch Shortbow",
+    "sortId": 5002000,
+    "affinityId": 4002
+  },
+  {
+    "weaponId": 40030000,
+    "name": "Harp Bow",
+    "sortId": 5004000,
+    "affinityId": 4003
+  },
+  {
+    "weaponId": 40050000,
+    "name": "Composite Bow",
+    "sortId": 5001000,
+    "affinityId": 4005
+  },
+  {
+    "weaponId": 40500000,
+    "name": "Bone Bow",
+    "sortId": 5005000,
+    "affinityId": 4050
+  },
+  {
+    "weaponId": 41000000,
+    "name": "Longbow",
+    "sortId": 5100000,
+    "affinityId": 4100
+  },
+  {
+    "weaponId": 41010000,
+    "name": "Albinauric Bow",
+    "sortId": 5101000,
+    "affinityId": 4101
+  },
+  {
+    "weaponId": 41020000,
+    "name": "Horn Bow",
+    "sortId": 5104000,
+    "affinityId": 4102
+  },
+  {
+    "weaponId": 41030000,
+    "name": "Erdtree Bow",
+    "sortId": 5106000,
+    "affinityId": 4103
+  },
+  {
+    "weaponId": 41040000,
+    "name": "Serpent Bow",
+    "sortId": 5105000,
+    "affinityId": 4104
+  },
+  {
+    "weaponId": 41060000,
+    "name": "Pulley Bow",
+    "sortId": 5103000,
+    "affinityId": 4106
+  },
+  {
+    "weaponId": 41070000,
+    "name": "Black Bow",
+    "sortId": 5102000,
+    "affinityId": 4107
+  },
+  {
+    "weaponId": 41510000,
+    "name": "Ansbach's Longbow",
+    "sortId": 5102500,
+    "affinityId": 4151
+  },
+  {
+    "weaponId": 42000000,
+    "name": "Lion Greatbow",
+    "sortId": 5203000,
+    "affinityId": 4200
+  },
+  {
+    "weaponId": 42010000,
+    "name": "Golem Greatbow",
+    "sortId": 5201000,
+    "affinityId": 4201
+  },
+  {
+    "weaponId": 42030000,
+    "name": "Erdtree Greatbow",
+    "sortId": 5202000,
+    "affinityId": 4203
+  },
+  {
+    "weaponId": 42040000,
+    "name": "Greatbow",
+    "sortId": 5200000,
+    "affinityId": 4204
+  },
+  {
+    "weaponId": 42500000,
+    "name": "Igon's Greatbow",
+    "sortId": 5202500,
+    "affinityId": 4250
+  },
+  {
+    "weaponId": 43000000,
+    "name": "Soldier's Crossbow",
+    "sortId": 5300000,
+    "affinityId": 4300
+  },
+  {
+    "weaponId": 43020000,
+    "name": "Light Crossbow",
+    "sortId": 5301000,
+    "affinityId": 4302
+  },
+  {
+    "weaponId": 43030000,
+    "name": "Heavy Crossbow",
+    "sortId": 5302000,
+    "affinityId": 4303
+  },
+  {
+    "weaponId": 43050000,
+    "name": "Pulley Crossbow",
+    "sortId": 5305000,
+    "affinityId": 4305
+  },
+  {
+    "weaponId": 43060000,
+    "name": "Full Moon Crossbow",
+    "sortId": 5306000,
+    "affinityId": 4306
+  },
+  {
+    "weaponId": 43080000,
+    "name": "Arbalest",
+    "sortId": 5303000,
+    "affinityId": 4308
+  },
+  {
+    "weaponId": 43110000,
+    "name": "Crepus's Black-Key Crossbow",
+    "sortId": 5304000,
+    "affinityId": 4311
+  },
+  {
+    "weaponId": 43500000,
+    "name": "Repeating Crossbow",
+    "sortId": 5305100,
+    "affinityId": 4350
+  },
+  {
+    "weaponId": 43510000,
+    "name": "Spread Crossbow",
+    "sortId": 5305200,
+    "affinityId": 4351
+  },
+  {
+    "weaponId": 44000000,
+    "name": "Hand Ballista",
+    "sortId": 5400000,
+    "affinityId": 4400
+  },
+  {
+    "weaponId": 44010000,
+    "name": "Jar Cannon",
+    "sortId": 5401000,
+    "affinityId": 4401
+  },
+  {
+    "weaponId": 44500000,
+    "name": "Rabbath's Cannon",
+    "sortId": 5402000,
+    "affinityId": 4450
+  },
+  {
+    "weaponId": 50000000,
+    "name": "Arrow",
+    "sortId": 6025000,
+    "affinityId": 5000
+  },
+  {
+    "weaponId": 50010000,
+    "name": "Fire Arrow",
+    "sortId": 6027000,
+    "affinityId": 5001
+  },
+  {
+    "weaponId": 50020000,
+    "name": "Serpent Arrow",
+    "sortId": 6029000,
+    "affinityId": 5002
+  },
+  {
+    "weaponId": 50030000,
+    "name": "Bone Arrow (Fletched)",
+    "sortId": 6001000,
+    "affinityId": 5003
+  },
+  {
+    "weaponId": 50040000,
+    "name": "St. Trina's Arrow",
+    "sortId": 6031000,
+    "affinityId": 5004
+  },
+  {
+    "weaponId": 50060000,
+    "name": "Shattershard Arrow (Fletched)",
+    "sortId": 6021000,
+    "affinityId": 5006
+  },
+  {
+    "weaponId": 50080000,
+    "name": "Rainbow Stone Arrow (Fletched)",
+    "sortId": 6023000,
+    "affinityId": 5008
+  },
+  {
+    "weaponId": 50090000,
+    "name": "Golden Arrow",
+    "sortId": 6028000,
+    "affinityId": 5009
+  },
+  {
+    "weaponId": 50100000,
+    "name": "Dwelling Arrow",
+    "sortId": 6026000,
+    "affinityId": 5010
+  },
+  {
+    "weaponId": 50110000,
+    "name": "Bone Arrow",
+    "sortId": 6000000,
+    "affinityId": 5011
+  },
+  {
+    "weaponId": 50130000,
+    "name": "Firebone Arrow (Fletched)",
+    "sortId": 6005000,
+    "affinityId": 5013
+  },
+  {
+    "weaponId": 50140000,
+    "name": "Firebone Arrow",
+    "sortId": 6004000,
+    "affinityId": 5014
+  },
+  {
+    "weaponId": 50150000,
+    "name": "Poisonbone Arrow (Fletched)",
+    "sortId": 6011000,
+    "affinityId": 5015
+  },
+  {
+    "weaponId": 50160000,
+    "name": "Poisonbone Arrow",
+    "sortId": 6010000,
+    "affinityId": 5016
+  },
+  {
+    "weaponId": 50170000,
+    "name": "Sleepbone Arrow (Fletched)",
+    "sortId": 6019000,
+    "affinityId": 5017
+  },
+  {
+    "weaponId": 50180000,
+    "name": "Sleepbone Arrow",
+    "sortId": 6018000,
+    "affinityId": 5018
+  },
+  {
+    "weaponId": 50190000,
+    "name": "Stormwing Bone Arrow",
+    "sortId": 6024000,
+    "affinityId": 5019
+  },
+  {
+    "weaponId": 50200000,
+    "name": "Lightningbone Arrow (Fletched)",
+    "sortId": 6007000,
+    "affinityId": 5020
+  },
+  {
+    "weaponId": 50210000,
+    "name": "Lightningbone Arrow",
+    "sortId": 6006000,
+    "affinityId": 5021
+  },
+  {
+    "weaponId": 50220000,
+    "name": "Rainbow Stone Arrow",
+    "sortId": 6022000,
+    "affinityId": 5022
+  },
+  {
+    "weaponId": 50230000,
+    "name": "Shattershard Arrow",
+    "sortId": 6020000,
+    "affinityId": 5023
+  },
+  {
+    "weaponId": 50240000,
+    "name": "Spiritflame Arrow",
+    "sortId": 6030000,
+    "affinityId": 5024
+  },
+  {
+    "weaponId": 50260000,
+    "name": "Magicbone Arrow (Fletched)",
+    "sortId": 6003000,
+    "affinityId": 5026
+  },
+  {
+    "weaponId": 50270000,
+    "name": "Magicbone Arrow",
+    "sortId": 6002000,
+    "affinityId": 5027
+  },
+  {
+    "weaponId": 50280000,
+    "name": "Haligbone Arrow (Fletched)",
+    "sortId": 6009000,
+    "affinityId": 5028
+  },
+  {
+    "weaponId": 50290000,
+    "name": "Haligbone Arrow",
+    "sortId": 6008000,
+    "affinityId": 5029
+  },
+  {
+    "weaponId": 50300000,
+    "name": "Bloodbone Arrow (Fletched)",
+    "sortId": 6015000,
+    "affinityId": 5030
+  },
+  {
+    "weaponId": 50310000,
+    "name": "Bloodbone Arrow",
+    "sortId": 6014000,
+    "affinityId": 5031
+  },
+  {
+    "weaponId": 50320000,
+    "name": "Coldbone Arrow (Fletched)",
+    "sortId": 6017000,
+    "affinityId": 5032
+  },
+  {
+    "weaponId": 50330000,
+    "name": "Coldbone Arrow",
+    "sortId": 6016000,
+    "affinityId": 5033
+  },
+  {
+    "weaponId": 50340000,
+    "name": "Rotbone Arrow (Fletched)",
+    "sortId": 6013000,
+    "affinityId": 5034
+  },
+  {
+    "weaponId": 50350000,
+    "name": "Rotbone Arrow",
+    "sortId": 6012000,
+    "affinityId": 5035
+  },
+  {
+    "weaponId": 50540000,
+    "name": "Piquebone Arrow (Fletched)",
+    "sortId": 6023200,
+    "affinityId": 5054
+  },
+  {
+    "weaponId": 50550000,
+    "name": "Piquebone Arrow",
+    "sortId": 6023100,
+    "affinityId": 5055
+  },
+  {
+    "weaponId": 51000000,
+    "name": "Great Arrow",
+    "sortId": 6102000,
+    "affinityId": 5100
+  },
+  {
+    "weaponId": 51010000,
+    "name": "Golem's Great Arrow",
+    "sortId": 6103000,
+    "affinityId": 5101
+  },
+  {
+    "weaponId": 51020000,
+    "name": "Golden Great Arrow",
+    "sortId": 6105000,
+    "affinityId": 5102
+  },
+  {
+    "weaponId": 51030000,
+    "name": "Golem's Magic Arrow",
+    "sortId": 6104000,
+    "affinityId": 5103
+  },
+  {
+    "weaponId": 51040000,
+    "name": "Radahn's Spear",
+    "sortId": 6106000,
+    "affinityId": 5104
+  },
+  {
+    "weaponId": 51050000,
+    "name": "Bone Great Arrow (Fletched)",
+    "sortId": 6101000,
+    "affinityId": 5105
+  },
+  {
+    "weaponId": 51060000,
+    "name": "Bone Great Arrow",
+    "sortId": 6100000,
+    "affinityId": 5106
+  },
+  {
+    "weaponId": 51500000,
+    "name": "Igon's Harpoon",
+    "sortId": 6106100,
+    "affinityId": 5150
+  },
+  {
+    "weaponId": 52000000,
+    "name": "Bolt",
+    "sortId": 6210000,
+    "affinityId": 5200
+  },
+  {
+    "weaponId": 52010000,
+    "name": "Lightning Bolt",
+    "sortId": 6216000,
+    "affinityId": 5201
+  },
+  {
+    "weaponId": 52020000,
+    "name": "Perfumer's Bolt",
+    "sortId": 6215000,
+    "affinityId": 5202
+  },
+  {
+    "weaponId": 52030000,
+    "name": "Black-Key Bolt",
+    "sortId": 6218000,
+    "affinityId": 5203
+  },
+  {
+    "weaponId": 52040000,
+    "name": "Burred Bolt",
+    "sortId": 6219000,
+    "affinityId": 5204
+  },
+  {
+    "weaponId": 52050000,
+    "name": "Meteor Bolt",
+    "sortId": 6212000,
+    "affinityId": 5205
+  },
+  {
+    "weaponId": 52060000,
+    "name": "Explosive Bolt",
+    "sortId": 6214000,
+    "affinityId": 5206
+  },
+  {
+    "weaponId": 52070000,
+    "name": "Golden Bolt",
+    "sortId": 6217000,
+    "affinityId": 5207
+  },
+  {
+    "weaponId": 52080000,
+    "name": "Lordsworn's Bolt",
+    "sortId": 6211000,
+    "affinityId": 5208
+  },
+  {
+    "weaponId": 52090000,
+    "name": "Bone Bolt",
+    "sortId": 6200000,
+    "affinityId": 5209
+  },
+  {
+    "weaponId": 52100000,
+    "name": "Firebone Bolt",
+    "sortId": 6202000,
+    "affinityId": 5210
+  },
+  {
+    "weaponId": 52110000,
+    "name": "Lightningbone Bolt",
+    "sortId": 6203000,
+    "affinityId": 5211
+  },
+  {
+    "weaponId": 52120000,
+    "name": "Magicbone Bolt",
+    "sortId": 6201000,
+    "affinityId": 5212
+  },
+  {
+    "weaponId": 52130000,
+    "name": "Haligbone Bolt",
+    "sortId": 6204000,
+    "affinityId": 5213
+  },
+  {
+    "weaponId": 52140000,
+    "name": "Poisonbone Bolt",
+    "sortId": 6205000,
+    "affinityId": 5214
+  },
+  {
+    "weaponId": 52150000,
+    "name": "Bloodbone Bolt",
+    "sortId": 6207000,
+    "affinityId": 5215
+  },
+  {
+    "weaponId": 52160000,
+    "name": "Coldbone Bolt",
+    "sortId": 6208000,
+    "affinityId": 5216
+  },
+  {
+    "weaponId": 52170000,
+    "name": "Rotbone Bolt",
+    "sortId": 6206000,
+    "affinityId": 5217
+  },
+  {
+    "weaponId": 52180000,
+    "name": "Sleepbone Bolt",
+    "sortId": 6209000,
+    "affinityId": 5218
+  },
+  {
+    "weaponId": 52190000,
+    "name": "Flaming Bolt",
+    "sortId": 6213000,
+    "affinityId": 5219
+  },
+  {
+    "weaponId": 52520000,
+    "name": "Piquebone Bolt",
+    "sortId": 6209100,
+    "affinityId": 5252
+  },
+  {
+    "weaponId": 53000000,
+    "name": "Ballista Bolt",
+    "sortId": 6221000,
+    "affinityId": 5300
+  },
+  {
+    "weaponId": 53010000,
+    "name": "Lightning Greatbolt",
+    "sortId": 6223000,
+    "affinityId": 5301
+  },
+  {
+    "weaponId": 53020000,
+    "name": "Explosive Greatbolt",
+    "sortId": 6222000,
+    "affinityId": 5302
+  },
+  {
+    "weaponId": 53030000,
+    "name": "Bone Ballista Bolt",
+    "sortId": 6220000,
+    "affinityId": 5303
+  },
+  {
+    "weaponId": 53500000,
+    "name": "Rabbath's Greatbolt",
+    "sortId": 6224000,
+    "affinityId": 5350
+  },
+  {
+    "weaponId": 60500000,
+    "name": "Dryleaf Arts",
+    "sortId": 3115000,
+    "affinityId": 6050
+  },
+  {
+    "weaponId": 60510000,
+    "name": "Dane's Footwork",
+    "sortId": 3116000,
+    "affinityId": 6051
+  },
+  {
+    "weaponId": 61500000,
+    "name": "Firespark Perfume Bottle",
+    "sortId": 3400000,
+    "affinityId": 6150
+  },
+  {
+    "weaponId": 61510000,
+    "name": "Chilling Perfume Bottle",
+    "sortId": 3402000,
+    "affinityId": 6151
+  },
+  {
+    "weaponId": 61520000,
+    "name": "Frenzyflame Perfume Bottle",
+    "sortId": 3403000,
+    "affinityId": 6152
+  },
+  {
+    "weaponId": 61530000,
+    "name": "Lightning Perfume Bottle",
+    "sortId": 3401000,
+    "affinityId": 6153
+  },
+  {
+    "weaponId": 61540000,
+    "name": "Deadly Poison Perfume Bottle",
+    "sortId": 3404000,
+    "affinityId": 6154
+  },
+  {
+    "weaponId": 62500000,
+    "name": "Dueling Shield",
+    "sortId": 7400000,
+    "affinityId": 6250
+  },
+  {
+    "weaponId": 62510000,
+    "name": "Carian Thrusting Shield",
+    "sortId": 7401000,
+    "affinityId": 6251
+  },
+  {
+    "weaponId": 63500000,
+    "name": "Smithscript Dagger",
+    "sortId": 1050000,
+    "affinityId": 6350
+  },
+  {
+    "weaponId": 64500000,
+    "name": "Backhand Blade",
+    "sortId": 1750000,
+    "affinityId": 6450
+  },
+  {
+    "weaponId": 64510000,
+    "name": "Smithscript Cirque",
+    "sortId": 1751000,
+    "affinityId": 6451
+  },
+  {
+    "weaponId": 64520000,
+    "name": "Curseblade's Cirque",
+    "sortId": 1752000,
+    "affinityId": 6452
+  },
+  {
+    "weaponId": 66500000,
+    "name": "Great Katana",
+    "sortId": 1850000,
+    "affinityId": 6650
+  },
+  {
+    "weaponId": 66510000,
+    "name": "Dragon-Hunter's Great Katana",
+    "sortId": 1851000,
+    "affinityId": 6651
+  },
+  {
+    "weaponId": 66520000,
+    "name": "Rakshasa's Great Katana",
+    "sortId": 1852000,
+    "affinityId": 6652
+  },
+  {
+    "weaponId": 67500000,
+    "name": "Milady",
+    "sortId": 1150000,
+    "affinityId": 6750
+  },
+  {
+    "weaponId": 67510000,
+    "name": "Leda's Sword",
+    "sortId": 1151000,
+    "affinityId": 6751
+  },
+  {
+    "weaponId": 67520000,
+    "name": "Rellana's Twin Blades",
+    "sortId": 1152000,
+    "affinityId": 6752
+  },
+  {
+    "weaponId": 68500000,
+    "name": "Beast Claw",
+    "sortId": 3300000,
+    "affinityId": 6850
+  }
+]
