@@ -12,27 +12,36 @@ struct CreateWeaponsView: View {
     @Environment(\.modelContext) var modelContext
     
     @Query(sort: \Weapon.weaponId) private var weapons: [Weapon]
+    @Query(sort: \WeaponUpgrade.reinforceTypeId) private var weaponUpgrades: [WeaponUpgrade]
     
-    func parseJson() {
-        let weapons = DefaultsJSON.decode(from: "weapons", type: [Weapon].self)
-        let weaponAffinitiesArr = DefaultsJSON.decode(from: "weaponAffinities", type: [WeaponAffinity].self)
-        let weaponUpgrades = DefaultsJSON.decode(from: "weaponUpgrades", type: [WeaponUpgrade].self)
+    func parseWeaponsJson() {
+        guard let weaponsArray = DefaultsJSON.decode(from: "weapons", type: [Weapon].self),
+              let weaponAffinitiesArray = DefaultsJSON.decode(from: "weaponAffinities", type: [WeaponAffinity].self),
+              weapons.isEmpty else {
+            return
+        }
         
-        weaponUpgrades?.forEach { modelContext.insert($0) }
-        
-        weapons?.forEach { weapon in
-            weapon.weaponAffinities?.append(contentsOf: weaponAffinitiesArr?.filter({ $0.affinityId == weapon.affinityId }) ?? [])
-            var weaponAffinitiesArrFiltered = weaponAffinitiesArr?.filter({ $0.affinityId == weapon.affinityId }) ?? []
-            print("\(weaponAffinitiesArrFiltered[0].affinityId) \(weaponAffinitiesArrFiltered[0].name), \(weaponAffinitiesArrFiltered[0].correctLuck)")
-            let newWeapon = Weapon(from: weapon, with: weaponAffinitiesArrFiltered)
-            weapon.weaponAffinities = weaponAffinitiesArrFiltered
+        weaponsArray.forEach { weapon in
+            let weaponAffinitiesArrayFiltered = weaponAffinitiesArray.filter({ $0.affinityId == weapon.affinityId })
+            weapon.weaponAffinities = weaponAffinitiesArrayFiltered
             modelContext.insert(weapon) // save into the binary
             print("===============")
-            print(newWeapon.weaponAffinities?.count)
-            print(weapon.weaponAffinities?.count)
-            print("Upgrades count: \(weaponUpgrades?.count)")
+            print("\(weapon.name)")
+            print("\(weapon.weaponAffinities?.count ?? 0)")
             print("===============")
         }
+    }
+    
+    func parseWeaponUpgradesJson() {
+        guard let weaponUpgradesArray = DefaultsJSON.decode(from: "weaponUpgrades", type: [WeaponUpgrade].self),
+              weaponUpgrades.isEmpty else {
+            return
+        }
+        
+        weaponUpgradesArray.forEach { modelContext.insert($0) }
+        print("===============")
+        print("Inserted weapon upgrades: \(weaponUpgradesArray.count)")
+        print("===============")
     }
     
     var body: some View {
@@ -42,37 +51,44 @@ struct CreateWeaponsView: View {
                     .font(.title)
                 Spacer()
                 Button("Add") {
-                    parseJson()
                     do {
+                        parseWeaponsJson()
+                        parseWeaponUpgradesJson()
                         try modelContext.save()
                     } catch {
-                        print("Failed when saving the newly added weapons: \(error.localizedDescription)")
+                        print("JSON decode failed: \(error.localizedDescription)")
                     }
                 }
             }
-            List(weapons) { weapon in
+            List {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text(weapon.name)
+                        Text("Weapons")
                             .font(.title2)
                         Spacer()
-                        Text("Weapon id: \(weapon.weaponId)")
-                    }
-                    HStack {
-                        ForEach(weapon.weaponAffinities ?? [], id: \.self) { affinity in
-                            Text(affinity.name)
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
+                        Text("Number of data: \(weapons.count)")
                     }
                 }
                 .swipeActions {
                     Button("Delete", systemImage: "trash", role: .destructive) {
-                        modelContext.delete(weapon)
+                        weapons.forEach { modelContext.delete($0) }
+                    }
+                }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Upgrades")
+                            .font(.title2)
+                        Spacer()
+                        Text("Number of data: \(weaponUpgrades.count)")
+                    }
+                }
+                .swipeActions {
+                    Button("Delete", systemImage: "trash", role: .destructive) {
+                        weaponUpgrades.forEach { modelContext.delete($0) }
                     }
                 }
             }
-            .navigationTitle("Weapons")
+            .navigationTitle("Create Data")
         }
         .padding()
     }
