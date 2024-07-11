@@ -9,12 +9,13 @@ import Foundation
 import SwiftData
 
 @Model
-class Weapon: Codable {
+class Weapon: Codable, Identifiable {
     enum CodingKeys: CodingKey {
         case weaponId, name, sortId, affinityId, weaponAffinities
     }
     
     //    @Attribute(.unique)
+    let id: UUID
     var weaponId: Int
     var name: String
     var sortId: Int
@@ -22,6 +23,7 @@ class Weapon: Codable {
     var weaponAffinities: [WeaponAffinity]?
     
     init(from: Weapon) {
+        self.id = from.id
         self.weaponId = from.weaponId
         self.name = from.name
         self.sortId = from.sortId
@@ -30,6 +32,7 @@ class Weapon: Codable {
     }
     
     init(from: Weapon, with: [WeaponAffinity]) {
+        self.id = from.id
         self.weaponId = from.weaponId
         self.name = from.name
         self.sortId = from.sortId
@@ -37,7 +40,8 @@ class Weapon: Codable {
         self.weaponAffinities = with
     }
     
-    init(weaponId: Int, name: String, sortId: Int, affinityId: Int, weaponAffinities: [WeaponAffinity]) {
+    init(id: UUID = UUID(), weaponId: Int, name: String, sortId: Int, affinityId: Int, weaponAffinities: [WeaponAffinity]) {
+        self.id = id
         self.weaponId = weaponId
         self.name = name
         self.sortId = sortId
@@ -47,6 +51,7 @@ class Weapon: Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = UUID()
         self.weaponId = try container.decode(Int.self, forKey: .weaponId)
         self.name = try container.decode(String.self, forKey: .name)
         self.sortId = try container.decode(Int.self, forKey: .sortId)
@@ -66,13 +71,14 @@ class Weapon: Codable {
 }
 
 //@Model
-struct WeaponAffinity: Codable, Hashable {
+struct WeaponAffinity: Codable, Hashable, Identifiable {
     
     enum CodingKeys: CodingKey {
         case weaponId, name, sortId, reinforceTypeId, affinityId, attackBasePhysics, attackBaseMagic, attackBaseFire, attackBaseThunder, attackBaseDark, correctStrength, correctAgility, correctMagic, correctFaith, correctLuck, weight, affinityHelper
     }
     
     //    @Attribute(.unique)
+    let id: UUID
     var weaponId: Int
     var name: String
     var sortId: Int
@@ -92,6 +98,7 @@ struct WeaponAffinity: Codable, Hashable {
     var affinityHelper: Bool
     
     init(from: WeaponAffinity) {
+        self.id = from.id
         self.weaponId = from.weaponId
         self.name = from.name
         self.sortId = from.sortId
@@ -111,7 +118,8 @@ struct WeaponAffinity: Codable, Hashable {
         self.affinityHelper = from.affinityHelper
     }
     
-    init(weaponId: Int, name: String, sortId: Int, reinforceTypeId: Int, affinityId: Int, attackBasePhysics: Double, attackBaseMagic: Double, attackBaseFire: Double, attackBaseThunder: Double, attackBaseDark: Double, correctStrength: Double, correctAgility: Double, correctMagic: Double, correctFaith: Double, correctLuck: Double,  weight: Double, affinityHelper: Bool) {
+    init(id: UUID = UUID(), weaponId: Int, name: String, sortId: Int, reinforceTypeId: Int, affinityId: Int, attackBasePhysics: Double, attackBaseMagic: Double, attackBaseFire: Double, attackBaseThunder: Double, attackBaseDark: Double, correctStrength: Double, correctAgility: Double, correctMagic: Double, correctFaith: Double, correctLuck: Double,  weight: Double, affinityHelper: Bool) {
+        self.id = id
         self.weaponId = weaponId
         self.name = name
         self.sortId = sortId
@@ -133,6 +141,7 @@ struct WeaponAffinity: Codable, Hashable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = UUID()
         self.weaponId = try container.decode(Int.self, forKey: .weaponId)
         self.name = try container.decode(String.self, forKey: .name)
         self.sortId = try container.decode(Int.self, forKey: .sortId)
@@ -175,11 +184,11 @@ struct WeaponAffinity: Codable, Hashable {
 }
 
 @Model
-class WeaponUpgrade: Codable {
+class WeaponUpgrade: Codable, Identifiable {
     enum CodingKeys: CodingKey {
         case reinforceTypeId, name, physicsAtkRate, magicAtkRate, fireAtkRate, thunderAtkRate, darkAtkRate, correctStrengthRate, correctAgilityRate, correctMagicRate, correctFaithRate, correctLuckRate, baseAtkRate
     }
-    
+    let id: UUID
     var reinforceTypeId: Int
     var name: String
     var physicsAtkRate: Double
@@ -195,6 +204,7 @@ class WeaponUpgrade: Codable {
     var baseAtkRate: Double
     
     init(from: WeaponUpgrade) {
+        self.id = from.id
         self.reinforceTypeId = from.reinforceTypeId
         self.name = from.name
         self.physicsAtkRate = from.physicsAtkRate
@@ -210,7 +220,8 @@ class WeaponUpgrade: Codable {
         self.baseAtkRate = from.baseAtkRate
     }
     
-    init(reinforceTypeId: Int, name: String, physicsAtkRate: Double, magicAtkRate: Double, fireAtkRate: Double, thunderAtkRate: Double, darkAtkRate: Double, correctStrengthRate: Double, correctAgilityRate: Double, correctMagicRate: Double, correctFaithRate: Double, correctLuckRate: Double, baseAtkRate: Double) {
+    init(id: UUID = UUID(), reinforceTypeId: Int, name: String, physicsAtkRate: Double, magicAtkRate: Double, fireAtkRate: Double, thunderAtkRate: Double, darkAtkRate: Double, correctStrengthRate: Double, correctAgilityRate: Double, correctMagicRate: Double, correctFaithRate: Double, correctLuckRate: Double, baseAtkRate: Double) {
+        self.id = id
         self.reinforceTypeId = reinforceTypeId
         self.name = name
         self.physicsAtkRate = physicsAtkRate
@@ -228,6 +239,7 @@ class WeaponUpgrade: Codable {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = UUID()
         self.reinforceTypeId = try container.decode(Int.self, forKey: .reinforceTypeId)
         self.name = try container.decode(String.self, forKey: .name)
         self.physicsAtkRate = try container.decode(Double.self, forKey: .physicsAtkRate)

@@ -20,18 +20,18 @@ struct LoadDataApp: App {
                 fatalError("Could not find Weapons datastore in bundle.")
             }
             
+            // Code for save in the document directory, for later use
             // Get the default.store
-            let fileManager = FileManager.default
-            let documentDirectoryURL = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
-            let documentURL = documentDirectoryURL.appendingPathComponent("default.store")
+//            let fileManager = FileManager.default
+//            let documentDirectoryURL = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+//            let documentURL = documentDirectoryURL.appendingPathComponent("default.store")
+//            
+//            // Only copy the store from the bundle to the Documents directory if it doesn't exist
+//            if !fileManager.fileExists(atPath: documentURL.path) {
+//                try fileManager.copyItem(at: weaponsURL, to: documentURL)
+//            }
             
-            // Only copy the store from the bundle to the Documents directory if it doesn't exist
-            if !fileManager.fileExists(atPath: documentURL.path) {
-                try fileManager.copyItem(at: weaponsURL, to: documentURL)
-            }
-            
-            // let schema = SwiftData.Schema(versionedSchema: Schema.self)
-            let weaponsConfiguration = ModelConfiguration(url: documentURL)
+            let weaponsConfiguration = ModelConfiguration(url: weaponsURL, allowsSave: false) // allowSave: false - ultramega important
             self.weaponsContainer = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, configurations: weaponsConfiguration)
         } catch {
             fatalError("Failed to setup SwiftData for Weapons: \(error.localizedDescription)")
