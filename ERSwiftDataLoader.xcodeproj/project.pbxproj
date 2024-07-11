@@ -26,6 +26,8 @@
 		D7A613102C2983C60044A097 /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A6130E2C2983C60044A097 /* Environments.swift */; };
 		D7A613112C2984160044A097 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A613002C2976B10044A097 /* Utils.swift */; };
 		D7BB5C4D2C29881C0072A26F /* temp.store in Resources */ = {isa = PBXBuildFile; fileRef = D7BB5C4C2C29881C0072A26F /* temp.store */; };
+		D7D4AAE32C3FF5A0005C5D42 /* elementScaling.json in Sources */ = {isa = PBXBuildFile; fileRef = D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */; };
+		D7D4AAE42C3FF5A0005C5D42 /* elementScaling.json in Sources */ = {isa = PBXBuildFile; fileRef = D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */; };
 		D7D940FC2C36BE7800500674 /* weaponUpgrades.json in Resources */ = {isa = PBXBuildFile; fileRef = D7D940FB2C36BE7800500674 /* weaponUpgrades.json */; };
 		D7D940FD2C36BE7800500674 /* weaponUpgrades.json in Resources */ = {isa = PBXBuildFile; fileRef = D7D940FB2C36BE7800500674 /* weaponUpgrades.json */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,7 @@
 		D7A613062C297CA60044A097 /* weapons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weapons.json; sourceTree = "<group>"; };
 		D7A6130E2C2983C60044A097 /* Environments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environments.swift; sourceTree = "<group>"; };
 		D7BB5C4C2C29881C0072A26F /* temp.store */ = {isa = PBXFileReference; lastKnownFileType = file; path = temp.store; sourceTree = "<group>"; };
+		D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = elementScaling.json; sourceTree = "<group>"; };
 		D7D940FB2C36BE7800500674 /* weaponUpgrades.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weaponUpgrades.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +142,7 @@
 				D7D940FB2C36BE7800500674 /* weaponUpgrades.json */,
 				D7A613052C297CA60044A097 /* weaponAffinities.json */,
 				D7A613062C297CA60044A097 /* weapons.json */,
+				D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */,
 				D7A612FD2C2976750044A097 /* Weapon.swift */,
 				D7A613002C2976B10044A097 /* Utils.swift */,
 			);
@@ -262,6 +266,7 @@
 				D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */,
 				D7A612FE2C2976750044A097 /* Weapon.swift in Sources */,
 				D7A6130F2C2983C60044A097 /* Environments.swift in Sources */,
+				D7D4AAE32C3FF5A0005C5D42 /* elementScaling.json in Sources */,
 				D7A613012C2976B10044A097 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +277,7 @@
 			files = (
 				D7342C112C3E7A2C00ED31EC /* UpgradesRowView.swift in Sources */,
 				D7A612F32C29649C0044A097 /* ListWeaponView.swift in Sources */,
+				D7D4AAE42C3FF5A0005C5D42 /* elementScaling.json in Sources */,
 				D7A612F12C29649C0044A097 /* LoadDataApp.swift in Sources */,
 				D7A612FF2C29767F0044A097 /* Weapon.swift in Sources */,
 				D7A613102C2983C60044A097 /* Environments.swift in Sources */,

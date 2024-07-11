@@ -272,3 +272,54 @@ class WeaponUpgrade: Codable, Identifiable {
         try container.encode(baseAtkRate, forKey: .baseAtkRate)
     }
 }
+
+@Model
+class ElementScaling: Decodable, Identifiable {
+    enum CodingKeys: CodingKey {
+        case id, rowId, physical, magic, fire, lightning, holy
+    }
+    
+    enum stats: String, Decodable {
+        case str, dex, int, fai, arc
+    }
+    
+    let id: UUID
+    var rowId: Int
+    var physical: [stats]
+    var magic: [stats]
+    var fire: [stats]
+    var lightning: [stats]
+    var holy: [stats]
+    
+    init(from: ElementScaling) {
+        self.id = from.id
+        self.rowId = from.rowId
+        self.physical = from.physical
+        self.magic = from.magic
+        self.fire = from.fire
+        self.lightning = from.lightning
+        self.holy = from.holy
+    }
+    
+    init(id: UUID = UUID(), rowId: Int, physical: [stats], magic: [stats], fire: [stats], lightning: [stats], holy: [stats]) {
+        self.id = id
+        self.rowId = rowId
+        self.physical = physical
+        self.magic = magic
+        self.fire = fire
+        self.lightning = lightning
+        self.holy = holy
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = UUID()
+        self.rowId = try container.decode(Int.self, forKey: .rowId)
+        self.physical = try container.decode([stats].self, forKey: .physical)
+        self.magic = try container.decode([stats].self, forKey: .magic)
+        self.fire = try container.decode([stats].self, forKey: .fire)
+        self.lightning = try container.decode([stats].self, forKey: .lightning)
+        self.holy = try container.decode([stats].self, forKey: .holy)
+        
+    }
+}

@@ -1,0 +1,122 @@
+[
+    {
+    "rowId": 10000,
+    "physical": ["str", "dex"],
+    "magic": ["int"],
+    "fire": ["fai"],
+    "lightning": ["dex"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 10005,
+    "physical": ["str", "dex"],
+    "magic": ["int"],
+    "fire": ["str"],
+    "lightning": ["dex"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 10013,
+    "physical": ["str", "dex", "arc"],
+    "magic": ["int"],
+    "fire": ["fai"],
+    "lightning": ["dex"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 10100,
+    "physical": ["str", "dex", "arc"],
+    "magic": ["int", "arc"],
+    "fire": ["fai", "arc"],
+    "lightning": ["dex", "arc"],
+    "holy": ["fai", "arc"]
+    },
+    {
+    "rowId": 12000,
+    "physical": ["str", "dex", "fai"],
+    "magic": ["int", "arc"],
+    "fire": ["fai"],
+    "lightning": ["dex"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 12005,
+    "physical": ["str", "dex", "fai"],
+    "magic": ["int"],
+    "fire": ["str"],
+    "lightning": ["dex"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 20000,
+    "physical": ["int"],
+    "magic": ["int"],
+    "fire": ["int"],
+    "lightning": ["int"],
+    "holy": ["int"]
+    },
+    {
+    "rowId": 20010,
+    "physical": ["int", "fai"],
+    "magic": ["int", "fai"],
+    "fire": ["int", "fai"],
+    "lightning": ["int", "fai"],
+    "holy": ["int", "fai"]
+    },
+    {
+    "rowId": 20020,
+    "physical": ["fai"],
+    "magic": ["fai"],
+    "fire": ["fai"],
+    "lightning": ["fai"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 20030,
+    "physical": ["int", "arc"],
+    "magic": ["int", "arc"],
+    "fire": ["int", "arc"],
+    "lightning": ["int", "arc"],
+    "holy": ["int", "arc"]
+    },
+    {
+    "rowId": 30000,
+    "physical": ["fai"],
+    "magic": ["fai"],
+    "fire": ["fai"],
+    "lightning": ["fai"],
+    "holy": ["fai"]
+    },
+    {
+    "rowId": 30010,
+    "physical": ["int", "fai"],
+    "magic": ["int", "fai"],
+    "fire": ["int", "fai"],
+    "lightning": ["int", "fai"],
+    "holy": ["int", "fai"]
+    },
+    {
+    "rowId": 30020,
+    "physical": ["str", "fai"],
+    "magic": ["str", "fai"],
+    "fire": ["str", "fai"],
+    "lightning": ["str", "fai"],
+    "holy": ["str", "fai"]
+    },
+    {
+    "rowId": 30030,
+    "physical": ["fai", "arc"],
+    "magic": ["fai", "arc"],
+    "fire": ["fai", "arc"],
+    "lightning": ["fai", "arc"],
+    "holy": ["fai", "arc"]
+    },
+    {
+    "rowId": 30040,
+    "physical": ["str", "dex", "int", "fai"],
+    "magic": ["str", "dex", "int", "fai"],
+    "fire": ["str", "dex", "int", "fai"],
+    "lightning": ["str", "dex", "int", "fai"],
+    "holy": ["str", "dex", "int", "fai"],
+    },
+]
