@@ -117,6 +117,6 @@
     "magic": ["str", "dex", "int", "fai"],
     "fire": ["str", "dex", "int", "fai"],
     "lightning": ["str", "dex", "int", "fai"],
-    "holy": ["str", "dex", "int", "fai"],
-    },
+    "holy": ["str", "dex", "int", "fai"]
+    }
 ]

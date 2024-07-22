@@ -14,7 +14,6 @@ struct UpgradesRowView: View {
     
     init(upgrade: WeaponUpgrade) {
         self.upgrade = upgrade
-//        let weaponID = weapon.weaponId
     }
     
     var body: some View {

@@ -14,7 +14,6 @@ struct WeaponRowView: View {
     
     init(weapon: Weapon) {
         self.weapon = weapon
-        let weaponID = weapon.weaponId
     }
     
     var body: some View {

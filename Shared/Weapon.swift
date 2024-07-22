@@ -274,22 +274,22 @@ class WeaponUpgrade: Codable, Identifiable {
 }
 
 @Model
-class ElementScaling: Decodable, Identifiable {
+class ElementScaling: Codable, Identifiable {
     enum CodingKeys: CodingKey {
-        case id, rowId, physical, magic, fire, lightning, holy
+        case rowId, physical, magic, fire, lightning, holy
     }
     
-    enum stats: String, Decodable {
+    enum Stats: String, Codable, Hashable {
         case str, dex, int, fai, arc
     }
     
     let id: UUID
     var rowId: Int
-    var physical: [stats]
-    var magic: [stats]
-    var fire: [stats]
-    var lightning: [stats]
-    var holy: [stats]
+    var physical: [Stats]
+    var magic: [Stats]
+    var fire: [Stats]
+    var lightning: [Stats]
+    var holy: [Stats]
     
     init(from: ElementScaling) {
         self.id = from.id
@@ -301,7 +301,7 @@ class ElementScaling: Decodable, Identifiable {
         self.holy = from.holy
     }
     
-    init(id: UUID = UUID(), rowId: Int, physical: [stats], magic: [stats], fire: [stats], lightning: [stats], holy: [stats]) {
+    init(id: UUID = UUID(), rowId: Int, physical: [Stats], magic: [Stats], fire: [Stats], lightning: [Stats], holy: [Stats]) {
         self.id = id
         self.rowId = rowId
         self.physical = physical
@@ -315,11 +315,21 @@ class ElementScaling: Decodable, Identifiable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = UUID()
         self.rowId = try container.decode(Int.self, forKey: .rowId)
-        self.physical = try container.decode([stats].self, forKey: .physical)
-        self.magic = try container.decode([stats].self, forKey: .magic)
-        self.fire = try container.decode([stats].self, forKey: .fire)
-        self.lightning = try container.decode([stats].self, forKey: .lightning)
-        self.holy = try container.decode([stats].self, forKey: .holy)
+        self.physical = try container.decode([Stats].self, forKey: .physical)
+        self.magic = try container.decode([Stats].self, forKey: .magic)
+        self.fire = try container.decode([Stats].self, forKey: .fire)
+        self.lightning = try container.decode([Stats].self, forKey: .lightning)
+        self.holy = try container.decode([Stats].self, forKey: .holy)
         
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(rowId, forKey: .rowId)
+        try container.encode(physical, forKey: .physical)
+        try container.encode(magic, forKey: .magic)
+        try container.encode(fire, forKey: .fire)
+        try container.encode(lightning, forKey: .lightning)
+        try container.encode(holy, forKey: .holy)
     }
 }

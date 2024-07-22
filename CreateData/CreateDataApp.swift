@@ -14,9 +14,9 @@ struct CreateDataApp: App {
     var container: ModelContainer
     
     init() {
-        let configuration = ModelConfiguration(for: Weapon.self, WeaponUpgrade.self)
+        let configuration = ModelConfiguration(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self)
         do {
-            self.container = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, configurations: configuration)
+            self.container = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, configurations: configuration)
         } catch {
             fatalError("Failed to setup SwiftData: \(error.localizedDescription)")
         }
@@ -58,26 +58,32 @@ struct CreateDataApp: App {
                     // Get all the challenges from the main SwiftData datastore
                     let fetchDescriptor = FetchDescriptor<Weapon>()
                     let weapons = try container.mainContext.fetch(fetchDescriptor)
+                    
                     let fetchDescriptorUpgrades = FetchDescriptor<WeaponUpgrade>()
                     let weaponUpgrades = try container.mainContext.fetch(fetchDescriptorUpgrades)
                     
+                    let fetchDescriptorScaling = FetchDescriptor<ElementScaling>()
+                    let elementScaling = try container.mainContext.fetch(fetchDescriptorScaling)
+                    
                     // Create the export datastore
                     let exportConfig = ModelConfiguration(url: url.appending(path: Constants.weaponsFilename))
-                    let exportContainer = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, configurations: exportConfig)
+                    let exportContainer = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, configurations: exportConfig)
                     
                     
                     // Copy the challenges to the exportContainer
                     for weapon in weapons {
-                        var newWeapon = Weapon(from: weapon)
+                        let newWeapon = Weapon(from: weapon)
                         exportContainer.mainContext.insert(newWeapon)
                     }
                     
                     for upgrade in weaponUpgrades {
-                        var newUpgrade = WeaponUpgrade(from: upgrade)
-                        print("================")
-                        print("newupgradename: \(newUpgrade.name) AND \(newUpgrade.reinforceTypeId)")
-                        print("================")
+                        let newUpgrade = WeaponUpgrade(from: upgrade)
                         exportContainer.mainContext.insert(newUpgrade)
+                    }
+                    
+                    for scaling in elementScaling {
+                        let newScaling = ElementScaling(from: scaling)
+                        exportContainer.mainContext.insert(newScaling)
                     }
                     
                     try exportContainer.mainContext.save()
