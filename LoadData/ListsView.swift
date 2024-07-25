@@ -97,6 +97,35 @@ struct ScalingView: View {
     }
 }
 
+struct CorrectGraphView: View {
+    
+    @Environment(\.weaponsContainer) var weaponsContainer: ModelContainer
+    
+    @MainActor
+    func getCorrectGraph() -> [CalcCorrectGraph] {
+//        testing xd
+        let fd2 = FetchDescriptor<CalcCorrectGraph>(sortBy: [SortDescriptor(\.graphId)])
+        do {
+            let correctGraphs = try weaponsContainer.mainContext.fetch(fd2)
+            print(correctGraphs.count)
+            return correctGraphs
+        } catch {
+            print("Failed to fetch Correct Graphs: \(error.localizedDescription)")
+        }
+        
+        return []
+    }
+    
+    var body: some View {
+        NavigationStack {
+            List(getCorrectGraph()) { correctGraph in
+                CorrectGraphRowView(correctGraph: correctGraph)
+            }
+            .navigationTitle("Calc Correct Graph")
+        }
+    }
+}
+
 struct HostingView: View {
     var body: some View {
         NavigationStack {
@@ -109,6 +138,9 @@ struct HostingView: View {
                 }
                 NavigationLink(destination: ScalingView()) {
                     Text("Scaling").font(.largeTitle)
+                }
+                NavigationLink(destination: CorrectGraphView()) {
+                    Text("Calc Correct Graph").font(.largeTitle)
                 }
             }
         }
