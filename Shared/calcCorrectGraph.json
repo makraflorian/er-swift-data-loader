@@ -1,7 +1,7 @@
     [
       {
-        "ID": 0,
-        "Name": "[Scaling] 60 (75%) -> 80 (90%) - Default",
+        "graphId": 0,
+        "name": "[Scaling] 60 (75%) -> 80 (90%) - Default",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 18.00,
         "stageMaxVal2": 60.00,
@@ -23,8 +23,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 1,
-        "Name": "[Scaling] 60 (75%) -> 80 (90%) - Heavy",
+        "graphId": 1,
+        "name": "[Scaling] 60 (75%) -> 80 (90%) - Heavy",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 60.00,
@@ -46,8 +46,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 2,
-        "Name": "[Scaling] 60 (75%) -> 80 (90%) - Keen",
+        "graphId": 2,
+        "name": "[Scaling] 60 (75%) -> 80 (90%) - Keen",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 60.00,
@@ -69,8 +69,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 3,
-        "Name": "[Scaling] 30 (62%) -> 50 (82%) - Physical Consumable",
+        "graphId": 3,
+        "name": "[Scaling] 30 (62%) -> 50 (82%) - Physical Consumable",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 30.00,
@@ -92,8 +92,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 4,
-        "Name": "[Scaling] 50 (80%) -> 80 (95%) - Elemental",
+        "graphId": 4,
+        "name": "[Scaling] 50 (80%) -> 80 (95%) - Elemental",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 50.00,
@@ -115,8 +115,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 5,
-        "Name": "[Scaling] 40 (225%) -> 80 (270%) - Serpent Bow Poison",
+        "graphId": 5,
+        "name": "[Scaling] 40 (225%) -> 80 (270%) - Serpent Bow Poison",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 40.00,
@@ -138,8 +138,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 6,
-        "Name": "[Scaling] 45 (75%) -> 60 (90%) - Status Default",
+        "graphId": 6,
+        "name": "[Scaling] 45 (75%) -> 60 (90%) - Status Default",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 25.00,
         "stageMaxVal2": 45.00,
@@ -161,8 +161,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 7,
-        "Name": "[Scaling] 60 (75%) -> 80 (90%) - Occult/Innate Arc",
+        "graphId": 7,
+        "name": "[Scaling] 60 (75%) -> 80 (90%) - Occult/Innate Arc",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 60.00,
@@ -184,8 +184,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 8,
-        "Name": "[Scaling] 60 (75%) -> 80 (90%) - Quality",
+        "graphId": 8,
+        "name": "[Scaling] 60 (75%) -> 80 (90%) - Quality",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 16.00,
         "stageMaxVal2": 58.00,
@@ -207,8 +207,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 9,
-        "Name": "[Scaling] 60 (80%) -> 80 (95%)",
+        "graphId": 9,
+        "name": "[Scaling] 60 (80%) -> 80 (95%)",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 60.00,
@@ -230,8 +230,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 10,
-        "Name": "[Scaling] 30 (50%) -> 50 (60%) - Status Consumable",
+        "graphId": 10,
+        "name": "[Scaling] 30 (50%) -> 50 (60%) - Status Consumable",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 15.00,
         "stageMaxVal2": 30.00,
@@ -253,8 +253,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 11,
-        "Name": "[Scaling] 45 (15%) -> 60 (18%) - Status Catalyst",
+        "graphId": 11,
+        "name": "[Scaling] 45 (15%) -> 60 (18%) - Status Catalyst",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 25.00,
         "stageMaxVal2": 45.00,
@@ -276,8 +276,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 12,
-        "Name": "[Scaling] 30 (55%) -> 45 (75%) - Catalyst",
+        "graphId": 12,
+        "name": "[Scaling] 30 (55%) -> 45 (75%) - Catalyst",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 15.00,
         "stageMaxVal2": 30.00,
@@ -299,8 +299,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 13,
-        "Name": "[Scaling] 30 (35%) -> 80 (90%)",
+        "graphId": 13,
+        "name": "[Scaling] 30 (35%) -> 80 (90%)",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 25.00,
         "stageMaxVal2": 30.00,
@@ -322,8 +322,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 14,
-        "Name": "[Scaling] 40 (60%) -> 80 (85%) - Catalyst",
+        "graphId": 14,
+        "name": "[Scaling] 40 (60%) -> 80 (85%) - Catalyst",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 20.00,
         "stageMaxVal2": 40.00,
@@ -345,8 +345,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 15,
-        "Name": "[Scaling] 60 (65%) -> 80 (95%) - Catalyst",
+        "graphId": 15,
+        "name": "[Scaling] 60 (65%) -> 80 (95%) - Catalyst",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 25.00,
         "stageMaxVal2": 60.00,
@@ -368,8 +368,8 @@
         "boundry_value": 0.00
       },
       {
-        "ID": 16,
-        "Name": "[Scaling] 60 (75%) -> 80 (90%) - Catalyst",
+        "graphId": 16,
+        "name": "[Scaling] 60 (75%) -> 80 (90%) - Catalyst",
         "stageMaxVal0": 1.00,
         "stageMaxVal1": 18.00,
         "stageMaxVal2": 60.00,

@@ -14,9 +14,9 @@ struct CreateDataApp: App {
     var container: ModelContainer
     
     init() {
-        let configuration = ModelConfiguration(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self)
+        let configuration = ModelConfiguration(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, CalcCorrectGraph.self)
         do {
-            self.container = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, configurations: configuration)
+            self.container = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, CalcCorrectGraph.self, configurations: configuration)
         } catch {
             fatalError("Failed to setup SwiftData: \(error.localizedDescription)")
         }
@@ -65,9 +65,12 @@ struct CreateDataApp: App {
                     let fetchDescriptorScaling = FetchDescriptor<ElementScaling>()
                     let elementScaling = try container.mainContext.fetch(fetchDescriptorScaling)
                     
+                    let fetchDescriptorCorrectGraph = FetchDescriptor<CalcCorrectGraph>()
+                    let calcCorrectGraphs = try container.mainContext.fetch(fetchDescriptorCorrectGraph)
+                    
                     // Create the export datastore
                     let exportConfig = ModelConfiguration(url: url.appending(path: Constants.weaponsFilename))
-                    let exportContainer = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, configurations: exportConfig)
+                    let exportContainer = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, CalcCorrectGraph.self, configurations: exportConfig)
                     
                     
                     // Copy the challenges to the exportContainer
@@ -86,9 +89,14 @@ struct CreateDataApp: App {
                         exportContainer.mainContext.insert(newScaling)
                     }
                     
+                    for correctGraph in calcCorrectGraphs {
+                        let newCorrectGraph = CalcCorrectGraph(from: correctGraph)
+                        exportContainer.mainContext.insert(newCorrectGraph)
+                    }
+                    
                     try exportContainer.mainContext.save()
                     print("================")
-                    print("SAVED and EXPORTED")
+                    print("SAVED and EXPORTED") // popup maybe
                     print("================")
                     
                 } catch {

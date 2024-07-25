@@ -14,6 +14,7 @@ struct CreateWeaponsView: View {
     @Query(sort: \Weapon.weaponId) private var weapons: [Weapon]
     @Query(sort: \WeaponUpgrade.reinforceTypeId) private var weaponUpgrades: [WeaponUpgrade]
     @Query(sort: \ElementScaling.rowId) private var elementScaling: [ElementScaling]
+    @Query(sort: \CalcCorrectGraph.graphId) private var calcCorrectGraphs: [CalcCorrectGraph]
     
     func parseWeaponsJson() {
         guard let weaponsArray = DefaultsJSON.decode(from: "weapons", type: [Weapon].self),
@@ -57,10 +58,22 @@ struct CreateWeaponsView: View {
         print("===============")
     }
     
+    func parseCalcCorrectGraphJson() {
+        guard let calcCorrectGraphsArray = DefaultsJSON.decode(from: "calcCorrectGraph", type: [CalcCorrectGraph].self),
+              calcCorrectGraphs.isEmpty else {
+            return
+        }
+        
+        calcCorrectGraphsArray.forEach { modelContext.insert($0) }
+        print("===============")
+        print("Inserted Calc Correct Graphs: \(calcCorrectGraphsArray.count)")
+        print("===============")
+    }
+    
     var body: some View {
         NavigationStack {
             HStack(alignment: .top) {
-                Text("There are \(weapons.count) weapons")
+                Text("Number of all data: \(weapons.count + weaponUpgrades.count + elementScaling.count + calcCorrectGraphs.count)")
                     .font(.title)
                 Spacer()
                 Button("Add") {
@@ -68,7 +81,11 @@ struct CreateWeaponsView: View {
                         parseWeaponsJson()
                         parseWeaponUpgradesJson()
                         parseElementScalingJson()
+                        parseCalcCorrectGraphJson()
                         try modelContext.save()
+                        print("================")
+                        print("PARSED and IMPORTED")
+                        print("================")
                     } catch {
                         print("JSON decode failed: \(error.localizedDescription)")
                     }
@@ -112,6 +129,19 @@ struct CreateWeaponsView: View {
                 .swipeActions {
                     Button("Delete", systemImage: "trash", role: .destructive) {
                         elementScaling.forEach { modelContext.delete($0) }
+                    }
+                }
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Calc Correct Graph")
+                            .font(.title2)
+                        Spacer()
+                        Text("Number of data: \(calcCorrectGraphs.count)")
+                    }
+                }
+                .swipeActions {
+                    Button("Delete", systemImage: "trash", role: .destructive) {
+                        calcCorrectGraphs.forEach { modelContext.delete($0) }
                     }
                 }
             }

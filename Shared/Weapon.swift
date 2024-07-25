@@ -335,7 +335,7 @@ class ElementScaling: Codable, Identifiable {
 }
 
 @Model
-class CalcCorrectGraph: Codable, Identifiable {
+class CalcCorrectGraph: Codable, Identifiable { // TODO: refactor this name
     
     enum CodingKeys: CodingKey {
         case graphId, name, stageMaxVal0, stageMaxVal1, stageMaxVal2, stageMaxVal3, stageMaxVal4, stageMaxGrowVal0, stageMaxGrowVal1, stageMaxGrowVal2, stageMaxGrowVal3, stageMaxGrowVal4, adjPt_maxGrowVal0, adjPt_maxGrowVal1, adjPt_maxGrowVal2, adjPt_maxGrowVal3, adjPt_maxGrowVal4, init_inclination_soul, adjustment_value, boundry_inclination_soul, boundry_value
@@ -343,7 +343,7 @@ class CalcCorrectGraph: Codable, Identifiable {
     
     let id: UUID
     var graphId: Int
-    var name: Double
+    var name: String
     var stageMaxVal0: Double
     var stageMaxVal1: Double
     var stageMaxVal2: Double
@@ -389,7 +389,7 @@ class CalcCorrectGraph: Codable, Identifiable {
         self.boundry_value = from.boundry_value
     }
     
-    init(id: UUID = UUID(), graphId: Int, name: Double, stageMaxVal0: Double, stageMaxVal1: Double, stageMaxVal2: Double, stageMaxVal3: Double, stageMaxVal4: Double, stageMaxGrowVal0: Double, stageMaxGrowVal1: Double, stageMaxGrowVal2: Double, stageMaxGrowVal3: Double, stageMaxGrowVal4: Double, adjPt_maxGrowVal0: Double, adjPt_maxGrowVal1: Double, adjPt_maxGrowVal2: Double, adjPt_maxGrowVal3: Double, adjPt_maxGrowVal4: Double, init_inclination_soul: Double, adjustment_value: Double, boundry_inclination_soul: Double, boundry_value: Double) {
+    init(id: UUID = UUID(), graphId: Int, name: String, stageMaxVal0: Double, stageMaxVal1: Double, stageMaxVal2: Double, stageMaxVal3: Double, stageMaxVal4: Double, stageMaxGrowVal0: Double, stageMaxGrowVal1: Double, stageMaxGrowVal2: Double, stageMaxGrowVal3: Double, stageMaxGrowVal4: Double, adjPt_maxGrowVal0: Double, adjPt_maxGrowVal1: Double, adjPt_maxGrowVal2: Double, adjPt_maxGrowVal3: Double, adjPt_maxGrowVal4: Double, init_inclination_soul: Double, adjustment_value: Double, boundry_inclination_soul: Double, boundry_value: Double) {
         self.id = id
         self.graphId = graphId
         self.name = name
@@ -419,7 +419,7 @@ class CalcCorrectGraph: Codable, Identifiable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = UUID()
         self.graphId = try container.decode(Int.self, forKey: .graphId)
-        self.name = try container.decode(Double.self, forKey: .name)
+        self.name = try container.decode(String.self, forKey: .name)
         self.stageMaxVal0 = try container.decode(Double.self, forKey: .stageMaxVal0)
         self.stageMaxVal1 = try container.decode(Double.self, forKey: .stageMaxVal1)
         self.stageMaxVal2 = try container.decode(Double.self, forKey: .stageMaxVal2)
