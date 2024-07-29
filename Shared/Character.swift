@@ -19,7 +19,7 @@ class CharacterClass: Codable, Identifiable {
     var classId: Int
     var name: String
     var level: Int
-    var stats: [CharacterStats]?
+    var stats: CharacterStats?
     
     init(from: CharacterClass) {
         self.id = from.id
@@ -29,7 +29,7 @@ class CharacterClass: Codable, Identifiable {
         self.stats = from.stats
     }
     
-    init(id: UUID, classId: Int, name: String, level: Int, stats: [CharacterStats]) {
+    init(id: UUID, classId: Int, name: String, level: Int, stats: CharacterStats) {
         self.id = id
         self.classId = classId
         self.name = name
@@ -43,7 +43,7 @@ class CharacterClass: Codable, Identifiable {
         self.classId = try container.decode(Int.self, forKey: .classId)
         self.name = try container.decode(String.self, forKey: .name)
         self.level = try container.decode(Int.self, forKey: .level)
-        self.stats = try container.decodeIfPresent([CharacterStats].self, forKey: .stats)
+        self.stats = try container.decodeIfPresent(CharacterStats.self, forKey: .stats)
     }
     
     func encode(to encoder: Encoder) throws {
