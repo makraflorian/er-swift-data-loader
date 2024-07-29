@@ -126,6 +126,35 @@ struct CorrectGraphView: View {
     }
 }
 
+struct CharacterClassView: View {
+    
+    @Environment(\.weaponsContainer) var weaponsContainer: ModelContainer
+    
+    @MainActor
+    func getCharacterClasses() -> [CharacterClass] {
+//        testing xd
+        let fd2 = FetchDescriptor<CharacterClass>(sortBy: [SortDescriptor(\.classId)])
+        do {
+            let characterClasses = try weaponsContainer.mainContext.fetch(fd2)
+            print(characterClasses.count)
+            return characterClasses
+        } catch {
+            print("Failed to fetch Character Classes: \(error.localizedDescription)")
+        }
+        
+        return []
+    }
+    
+    var body: some View {
+        NavigationStack {
+            List(getCharacterClasses()) { characterClass in
+                CharacterClassRowView(characterClass: characterClass)
+            }
+            .navigationTitle("Character Classes")
+        }
+    }
+}
+
 struct HostingView: View {
     var body: some View {
         NavigationStack {
@@ -141,6 +170,10 @@ struct HostingView: View {
                 }
                 NavigationLink(destination: CorrectGraphView()) {
                     Text("Calc Correct Graph").font(.largeTitle)
+                }
+                Divider()
+                NavigationLink(destination: CharacterClassView()) {
+                    Text("Character Classes").font(.largeTitle)
                 }
             }
         }

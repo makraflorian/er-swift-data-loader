@@ -32,7 +32,12 @@ struct LoadDataApp: App {
 //            }
             
             let weaponsConfiguration = ModelConfiguration(url: weaponsURL, allowsSave: false) // allowSave: false - ultramega important
-            self.weaponsContainer = try ModelContainer(for: Weapon.self, WeaponUpgrade.self, ElementScaling.self, CalcCorrectGraph.self, configurations: weaponsConfiguration)
+            self.weaponsContainer = try ModelContainer(for: Weapon.self,
+                                                       WeaponUpgrade.self,
+                                                       ElementScaling.self,
+                                                       CalcCorrectGraph.self,
+                                                       CharacterClass.self,
+                                                       configurations: weaponsConfiguration)
         } catch {
             fatalError("Failed to setup SwiftData for Weapons: \(error.localizedDescription)")
         }

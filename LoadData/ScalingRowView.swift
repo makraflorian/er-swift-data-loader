@@ -31,6 +31,8 @@ struct ScalingRowView: View {
                     Text("\(scale.rawValue)")
                 }
             }
+            .font(.caption)
+            .foregroundStyle(.secondary)
         }
     }
 }

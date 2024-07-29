@@ -33,6 +33,8 @@ struct UpgradesRowView: View {
                 Text("\(upgrade.thunderAtkRate) ")
                 Text("\(upgrade.darkAtkRate) ")
             }
+            .font(.caption)
+            .foregroundStyle(.secondary)
         }
     }
 }

@@ -11,6 +11,9 @@
 		D70398F82C4E7A0C0039F0CC /* elementScaling.json in Resources */ = {isa = PBXBuildFile; fileRef = D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */; };
 		D707072A2C578540004615C0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707292C578540004615C0 /* Character.swift */; };
 		D707072B2C578540004615C0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707292C578540004615C0 /* Character.swift */; };
+		D707072D2C57947A004615C0 /* characterClasses.json in Resources */ = {isa = PBXBuildFile; fileRef = D707072C2C57947A004615C0 /* characterClasses.json */; };
+		D707072E2C57947A004615C0 /* characterClasses.json in Resources */ = {isa = PBXBuildFile; fileRef = D707072C2C57947A004615C0 /* characterClasses.json */; };
+		D70707302C57B334004615C0 /* CharacterClassRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707072F2C57B334004615C0 /* CharacterClassRowView.swift */; };
 		D7342C112C3E7A2C00ED31EC /* UpgradesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */; };
 		D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DD2C2964550044A097 /* CreateDataApp.swift */; };
 		D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DF2C2964550044A097 /* CreateWeaponsView.swift */; };
@@ -38,6 +41,8 @@
 /* Begin PBXFileReference section */
 		D70398F62C4E49260039F0CC /* ScalingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingRowView.swift; sourceTree = "<group>"; };
 		D70707292C578540004615C0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D707072C2C57947A004615C0 /* characterClasses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characterClasses.json; sourceTree = "<group>"; };
+		D707072F2C57B334004615C0 /* CharacterClassRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassRowView.swift; sourceTree = "<group>"; };
 		D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradesRowView.swift; sourceTree = "<group>"; };
 		D7A612DB2C2964550044A097 /* CreateData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A612DD2C2964550044A097 /* CreateDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDataApp.swift; sourceTree = "<group>"; };
@@ -131,6 +136,7 @@
 				D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */,
 				D70398F62C4E49260039F0CC /* ScalingRowView.swift */,
 				D7C5D6DF2C52A139002A8FE5 /* CorrectGraphRowView.swift */,
+				D707072F2C57B334004615C0 /* CharacterClassRowView.swift */,
 				D7A612F42C29649E0044A097 /* Assets.xcassets */,
 				D7A612F62C29649E0044A097 /* Preview Content */,
 			);
@@ -148,6 +154,7 @@
 		D7A612FC2C2964B70044A097 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D707072C2C57947A004615C0 /* characterClasses.json */,
 				D7D940FB2C36BE7800500674 /* weaponUpgrades.json */,
 				D7A613052C297CA60044A097 /* weaponAffinities.json */,
 				D7A613062C297CA60044A097 /* weapons.json */,
@@ -249,6 +256,7 @@
 			files = (
 				D7E541292C4EA22800C16037 /* calcCorrectGraph.json in Resources */,
 				D70398F82C4E7A0C0039F0CC /* elementScaling.json in Resources */,
+				D707072D2C57947A004615C0 /* characterClasses.json in Resources */,
 				D7A612E52C2964560044A097 /* Preview Assets.xcassets in Resources */,
 				D7A613092C297CA60044A097 /* weapons.json in Resources */,
 				D7A612E22C2964560044A097 /* Assets.xcassets in Resources */,
@@ -263,6 +271,7 @@
 			files = (
 				D7A612F82C29649E0044A097 /* Preview Assets.xcassets in Resources */,
 				D7A612F52C29649E0044A097 /* Assets.xcassets in Resources */,
+				D707072E2C57947A004615C0 /* characterClasses.json in Resources */,
 				D7BB5C4D2C29881C0072A26F /* temp.store in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +306,7 @@
 				D707072B2C578540004615C0 /* Character.swift in Sources */,
 				D7A613042C2978440044A097 /* WeaponRowView.swift in Sources */,
 				D7A613112C2984160044A097 /* Utils.swift in Sources */,
+				D70707302C57B334004615C0 /* CharacterClassRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
