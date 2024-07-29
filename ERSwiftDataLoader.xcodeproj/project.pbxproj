@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D70398F72C4E49260039F0CC /* ScalingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70398F62C4E49260039F0CC /* ScalingRowView.swift */; };
 		D70398F82C4E7A0C0039F0CC /* elementScaling.json in Resources */ = {isa = PBXBuildFile; fileRef = D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */; };
+		D707072A2C578540004615C0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707292C578540004615C0 /* Character.swift */; };
+		D707072B2C578540004615C0 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707292C578540004615C0 /* Character.swift */; };
 		D7342C112C3E7A2C00ED31EC /* UpgradesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */; };
 		D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DD2C2964550044A097 /* CreateDataApp.swift */; };
 		D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DF2C2964550044A097 /* CreateWeaponsView.swift */; };
@@ -35,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		D70398F62C4E49260039F0CC /* ScalingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalingRowView.swift; sourceTree = "<group>"; };
+		D70707292C578540004615C0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradesRowView.swift; sourceTree = "<group>"; };
 		D7A612DB2C2964550044A097 /* CreateData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A612DD2C2964550044A097 /* CreateDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDataApp.swift; sourceTree = "<group>"; };
@@ -151,6 +154,7 @@
 				D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */,
 				D7E541272C4EA1F800C16037 /* calcCorrectGraph.json */,
 				D7A612FD2C2976750044A097 /* Weapon.swift */,
+				D70707292C578540004615C0 /* Character.swift */,
 				D7A613002C2976B10044A097 /* Utils.swift */,
 			);
 			path = Shared;
@@ -273,6 +277,7 @@
 				D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */,
 				D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */,
 				D7A612FE2C2976750044A097 /* Weapon.swift in Sources */,
+				D707072A2C578540004615C0 /* Character.swift in Sources */,
 				D7A6130F2C2983C60044A097 /* Environments.swift in Sources */,
 				D7A613012C2976B10044A097 /* Utils.swift in Sources */,
 			);
@@ -289,6 +294,7 @@
 				D70398F72C4E49260039F0CC /* ScalingRowView.swift in Sources */,
 				D7A612FF2C29767F0044A097 /* Weapon.swift in Sources */,
 				D7A613102C2983C60044A097 /* Environments.swift in Sources */,
+				D707072B2C578540004615C0 /* Character.swift in Sources */,
 				D7A613042C2978440044A097 /* WeaponRowView.swift in Sources */,
 				D7A613112C2984160044A097 /* Utils.swift in Sources */,
 			);
