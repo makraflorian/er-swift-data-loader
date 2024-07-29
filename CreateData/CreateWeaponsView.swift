@@ -15,6 +15,7 @@ struct CreateWeaponsView: View {
     @Query(sort: \WeaponUpgrade.reinforceTypeId) private var weaponUpgrades: [WeaponUpgrade]
     @Query(sort: \ElementScaling.rowId) private var elementScaling: [ElementScaling]
     @Query(sort: \CalcCorrectGraph.graphId) private var calcCorrectGraphs: [CalcCorrectGraph]
+    @Query(sort: \CharacterClass.classId) private var characterClasses: [CharacterClass]
     
     func parseWeaponsJson() {
         guard let weaponsArray = DefaultsJSON.decode(from: "weapons", type: [Weapon].self),
@@ -70,10 +71,22 @@ struct CreateWeaponsView: View {
         print("===============")
     }
     
+    func parseCharacterClassesJson() {
+        guard let characterClassesArray = DefaultsJSON.decode(from: "characterClasses", type: [CharacterClass].self),
+              characterClasses.isEmpty else {
+            return
+        }
+        
+        characterClassesArray.forEach { modelContext.insert($0) }
+        print("===============")
+        print("Inserted Character Classes: \(characterClassesArray.count)")
+        print("===============")
+    }
+    
     var body: some View {
         NavigationStack {
             HStack(alignment: .top) {
-                Text("Number of all data: \(weapons.count + weaponUpgrades.count + elementScaling.count + calcCorrectGraphs.count)")
+                Text("Number of all data: \(weapons.count + weaponUpgrades.count + elementScaling.count + calcCorrectGraphs.count + characterClasses.count)")
                     .font(.title)
                 Spacer()
                 Button("Add") {
@@ -82,6 +95,7 @@ struct CreateWeaponsView: View {
                         parseWeaponUpgradesJson()
                         parseElementScalingJson()
                         parseCalcCorrectGraphJson()
+                        parseCharacterClassesJson()
                         try modelContext.save()
                         print("================")
                         print("PARSED and IMPORTED")
@@ -92,6 +106,9 @@ struct CreateWeaponsView: View {
                 }
             }
             List {
+                Text("Weapons:")
+                    .font(.title)
+                    .padding([.bottom, .top, .trailing], 20)
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Weapons")
@@ -142,6 +159,22 @@ struct CreateWeaponsView: View {
                 .swipeActions {
                     Button("Delete", systemImage: "trash", role: .destructive) {
                         calcCorrectGraphs.forEach { modelContext.delete($0) }
+                    }
+                }
+                Text("Character:")
+                    .font(.title)
+                    .padding([.bottom, .top, .trailing], 20)
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Character Classes")
+                            .font(.title2)
+                        Spacer()
+                        Text("Number of data: \(characterClasses.count)")
+                    }
+                }
+                .swipeActions {
+                    Button("Delete", systemImage: "trash", role: .destructive) {
+                        characterClasses.forEach { modelContext.delete($0) }
                     }
                 }
             }
