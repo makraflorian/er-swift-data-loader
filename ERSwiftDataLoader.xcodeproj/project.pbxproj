@@ -22,7 +22,7 @@
 		D707073C2C57CC65004615C0 /* CalcCorrectGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707073A2C57CC65004615C0 /* CalcCorrectGraph.swift */; };
 		D7342C112C3E7A2C00ED31EC /* UpgradesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */; };
 		D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DD2C2964550044A097 /* CreateDataApp.swift */; };
-		D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DF2C2964550044A097 /* CreateWeaponsView.swift */; };
+		D7A612E02C2964550044A097 /* CreateDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DF2C2964550044A097 /* CreateDataView.swift */; };
 		D7A612E22C2964560044A097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A612E12C2964560044A097 /* Assets.xcassets */; };
 		D7A612E52C2964560044A097 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A612E42C2964560044A097 /* Preview Assets.xcassets */; };
 		D7A612F12C29649C0044A097 /* LoadDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612F02C29649C0044A097 /* LoadDataApp.swift */; };
@@ -55,7 +55,7 @@
 		D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradesRowView.swift; sourceTree = "<group>"; };
 		D7A612DB2C2964550044A097 /* CreateData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A612DD2C2964550044A097 /* CreateDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDataApp.swift; sourceTree = "<group>"; };
-		D7A612DF2C2964550044A097 /* CreateWeaponsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWeaponsView.swift; sourceTree = "<group>"; };
+		D7A612DF2C2964550044A097 /* CreateDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDataView.swift; sourceTree = "<group>"; };
 		D7A612E12C2964560044A097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A612E42C2964560044A097 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7A612E62C2964560044A097 /* CreateData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreateData.entitlements; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D7A612DD2C2964550044A097 /* CreateDataApp.swift */,
-				D7A612DF2C2964550044A097 /* CreateWeaponsView.swift */,
+				D7A612DF2C2964550044A097 /* CreateDataView.swift */,
 				D7A612E12C2964560044A097 /* Assets.xcassets */,
 				D7A612E62C2964560044A097 /* CreateData.entitlements */,
 				D7A612E32C2964560044A097 /* Preview Content */,
@@ -311,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */,
+				D7A612E02C2964550044A097 /* CreateDataView.swift in Sources */,
 				D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */,
 				D70707382C57CC2E004615C0 /* ElementScaling.swift in Sources */,
 				D7A612FE2C2976750044A097 /* Weapon.swift in Sources */,
