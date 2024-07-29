@@ -10,7 +10,6 @@ import SwiftData
 
 @Model
 class CharacterClass: Codable, Identifiable {
-    
     enum CodingKeys: CodingKey {
         case classId, name, level, stats
     }
@@ -56,8 +55,6 @@ class CharacterClass: Codable, Identifiable {
 }
 
 struct CharacterStats: Codable, Hashable {
-    
-    
     enum CodingKeys: CodingKey {
         case vigor, mind, endurance, strength, dexterity, intelligence, faith, arcane
     }

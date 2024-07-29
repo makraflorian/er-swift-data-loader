@@ -14,6 +14,12 @@
 		D707072D2C57947A004615C0 /* characterClasses.json in Resources */ = {isa = PBXBuildFile; fileRef = D707072C2C57947A004615C0 /* characterClasses.json */; };
 		D707072E2C57947A004615C0 /* characterClasses.json in Resources */ = {isa = PBXBuildFile; fileRef = D707072C2C57947A004615C0 /* characterClasses.json */; };
 		D70707302C57B334004615C0 /* CharacterClassRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707072F2C57B334004615C0 /* CharacterClassRowView.swift */; };
+		D70707352C57CBDF004615C0 /* WeaponUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707332C57CBD7004615C0 /* WeaponUpgrade.swift */; };
+		D70707362C57CBE0004615C0 /* WeaponUpgrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707332C57CBD7004615C0 /* WeaponUpgrade.swift */; };
+		D70707382C57CC2E004615C0 /* ElementScaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707372C57CC2E004615C0 /* ElementScaling.swift */; };
+		D70707392C57CC2E004615C0 /* ElementScaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70707372C57CC2E004615C0 /* ElementScaling.swift */; };
+		D707073B2C57CC65004615C0 /* CalcCorrectGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707073A2C57CC65004615C0 /* CalcCorrectGraph.swift */; };
+		D707073C2C57CC65004615C0 /* CalcCorrectGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707073A2C57CC65004615C0 /* CalcCorrectGraph.swift */; };
 		D7342C112C3E7A2C00ED31EC /* UpgradesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */; };
 		D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DD2C2964550044A097 /* CreateDataApp.swift */; };
 		D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A612DF2C2964550044A097 /* CreateWeaponsView.swift */; };
@@ -43,6 +49,9 @@
 		D70707292C578540004615C0 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		D707072C2C57947A004615C0 /* characterClasses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characterClasses.json; sourceTree = "<group>"; };
 		D707072F2C57B334004615C0 /* CharacterClassRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterClassRowView.swift; sourceTree = "<group>"; };
+		D70707332C57CBD7004615C0 /* WeaponUpgrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponUpgrade.swift; sourceTree = "<group>"; };
+		D70707372C57CC2E004615C0 /* ElementScaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementScaling.swift; sourceTree = "<group>"; };
+		D707073A2C57CC65004615C0 /* CalcCorrectGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcCorrectGraph.swift; sourceTree = "<group>"; };
 		D7342C102C3E7A2C00ED31EC /* UpgradesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradesRowView.swift; sourceTree = "<group>"; };
 		D7A612DB2C2964550044A097 /* CreateData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreateData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A612DD2C2964550044A097 /* CreateDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDataApp.swift; sourceTree = "<group>"; };
@@ -86,6 +95,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D70707312C57CB5D004615C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D707072C2C57947A004615C0 /* characterClasses.json */,
+				D7D940FB2C36BE7800500674 /* weaponUpgrades.json */,
+				D7A613052C297CA60044A097 /* weaponAffinities.json */,
+				D7A613062C297CA60044A097 /* weapons.json */,
+				D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */,
+				D7E541272C4EA1F800C16037 /* calcCorrectGraph.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D70707322C57CB66004615C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7A612FD2C2976750044A097 /* Weapon.swift */,
+				D70707332C57CBD7004615C0 /* WeaponUpgrade.swift */,
+				D70707372C57CC2E004615C0 /* ElementScaling.swift */,
+				D707073A2C57CC65004615C0 /* CalcCorrectGraph.swift */,
+				D70707292C578540004615C0 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D7A612BC2C2964350044A097 = {
 			isa = PBXGroup;
 			children = (
@@ -154,14 +188,8 @@
 		D7A612FC2C2964B70044A097 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D707072C2C57947A004615C0 /* characterClasses.json */,
-				D7D940FB2C36BE7800500674 /* weaponUpgrades.json */,
-				D7A613052C297CA60044A097 /* weaponAffinities.json */,
-				D7A613062C297CA60044A097 /* weapons.json */,
-				D7D4AAE22C3FF5A0005C5D42 /* elementScaling.json */,
-				D7E541272C4EA1F800C16037 /* calcCorrectGraph.json */,
-				D7A612FD2C2976750044A097 /* Weapon.swift */,
-				D70707292C578540004615C0 /* Character.swift */,
+				D70707322C57CB66004615C0 /* Model */,
+				D70707312C57CB5D004615C0 /* Data */,
 				D7A613002C2976B10044A097 /* Utils.swift */,
 			);
 			path = Shared;
@@ -285,10 +313,13 @@
 			files = (
 				D7A612E02C2964550044A097 /* CreateWeaponsView.swift in Sources */,
 				D7A612DE2C2964550044A097 /* CreateDataApp.swift in Sources */,
+				D70707382C57CC2E004615C0 /* ElementScaling.swift in Sources */,
 				D7A612FE2C2976750044A097 /* Weapon.swift in Sources */,
+				D70707352C57CBDF004615C0 /* WeaponUpgrade.swift in Sources */,
 				D707072A2C578540004615C0 /* Character.swift in Sources */,
 				D7A6130F2C2983C60044A097 /* Environments.swift in Sources */,
 				D7A613012C2976B10044A097 /* Utils.swift in Sources */,
+				D707073B2C57CC65004615C0 /* CalcCorrectGraph.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,10 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D707073C2C57CC65004615C0 /* CalcCorrectGraph.swift in Sources */,
+				D70707362C57CBE0004615C0 /* WeaponUpgrade.swift in Sources */,
 				D7342C112C3E7A2C00ED31EC /* UpgradesRowView.swift in Sources */,
 				D7A612F32C29649C0044A097 /* ListsView.swift in Sources */,
 				D7C5D6E02C52A139002A8FE5 /* CorrectGraphRowView.swift in Sources */,
 				D7A612F12C29649C0044A097 /* LoadDataApp.swift in Sources */,
+				D70707392C57CC2E004615C0 /* ElementScaling.swift in Sources */,
 				D70398F72C4E49260039F0CC /* ScalingRowView.swift in Sources */,
 				D7A612FF2C29767F0044A097 /* Weapon.swift in Sources */,
 				D7A613102C2983C60044A097 /* Environments.swift in Sources */,

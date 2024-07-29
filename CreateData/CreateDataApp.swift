@@ -33,7 +33,7 @@ struct CreateDataApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CreateWeaponsView()
+            CreateDataView()
                 .modelContainer(container)
         }
         .commands {
@@ -41,7 +41,7 @@ struct CreateDataApp: App {
                 Divider()
                 
                 Button("Export") {
-                    exportWeapons()
+                    exportData()
                 }
                 .keyboardShortcut("e", modifiers: .command)
             }
@@ -49,7 +49,7 @@ struct CreateDataApp: App {
     }
     
     @MainActor
-    func exportWeapons() {
+    func exportData() {
         let panel = NSOpenPanel()
         panel.canChooseDirectories = true
         panel.canChooseFiles = false
@@ -64,7 +64,7 @@ struct CreateDataApp: App {
             
             if url.startAccessingSecurityScopedResource() {
                 do {
-                    // Get all the challenges from the main SwiftData datastore
+                    // Get all the data from the main SwiftData datastore
                     let fetchDescriptor = FetchDescriptor<Weapon>()
                     let weapons = try container.mainContext.fetch(fetchDescriptor)
                     
@@ -90,7 +90,7 @@ struct CreateDataApp: App {
                                                              configurations: exportConfig)
                     
                     
-                    // Copy the challenges to the exportContainer
+                    // Copy the data to the exportContainer
                     for weapon in weapons {
                         let newWeapon = Weapon(from: weapon)
                         exportContainer.mainContext.insert(newWeapon)

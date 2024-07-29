@@ -8,7 +8,7 @@
 import SwiftData
 import SwiftUI
 
-struct CreateWeaponsView: View {
+struct CreateDataView: View {
     @Environment(\.modelContext) var modelContext
     
     @Query(sort: \Weapon.weaponId) private var weapons: [Weapon]
