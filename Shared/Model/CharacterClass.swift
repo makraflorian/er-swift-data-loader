@@ -7,7 +7,9 @@
 
 import Foundation
 import SwiftData
+import SwiftDataModelMirror
 
+@ModelMirror
 @Model
 class CharacterClass: Codable, Identifiable {
     enum CodingKeys: CodingKey {
