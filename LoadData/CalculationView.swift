@@ -44,38 +44,27 @@ struct CalculationView: View {
         // MARK: FetchDescriptors and DB things
         
         // helper class
-        var characterFD = FetchDescriptor<CharacterClass>(predicate: #Predicate { char in
-            char.classId == 100
-        })
-        characterFD.fetchLimit = 1
-        let character = try? weaponsContainer.mainContext.fetch(characterFD).first
+        let character: CharacterClass? = fetchData(modelContext: weaponsContainer.mainContext,
+                                  predicate: #Predicate { char in char.classId == 100 })
         
         // dagger
-        var weaponFD = FetchDescriptor<Weapon>(predicate: #Predicate { weap in
-            weap.weaponId == 1000000
-        })
-        weaponFD.fetchLimit = 1
-        
-        
-        let weapon = try? weaponsContainer.mainContext.fetch(weaponFD)
+        let weapon: Weapon? = fetchData(modelContext: weaponsContainer.mainContext,
+                                  predicate: #Predicate { weap in weap.weaponId == 1000000 })
         
         // cold dagger
-        let weaponWithAffinity = weapon?[0].weaponAffinities?.first(where: { $0.weaponId == 1000900 })
+        let weaponWithAffinity = weapon?.weaponAffinities?.first(where: { $0.weaponId == 1000900 })
         
         // cold dagger +5
-        var weaponUpgradeFD = FetchDescriptor<WeaponUpgrade>(predicate: #Predicate { upgrade in
-            upgrade.reinforceTypeId == 905
-        })
-        weaponUpgradeFD.fetchLimit = 1
-        let weaponUpgrade = try! weaponsContainer.mainContext.fetch(weaponUpgradeFD)[0]
+        let weaponUpgrade: WeaponUpgrade? = fetchData(modelContext: weaponsContainer.mainContext,
+                                  predicate: #Predicate { upgrade in upgrade.reinforceTypeId == 905 })
         
         // MARK: shit calculations
-        var physicalAttack = weaponWithAffinity!.attackBasePhysics * weaponUpgrade.physicsAtkRate
-        print(weaponUpgrade.physicsAtkRate ?? 0.0)
-        var magicAttack = weaponWithAffinity?.attackBaseMagic ?? 0.0 * (weaponUpgrade.magicAtkRate ?? 0.0)
-        var fireAttack = weaponWithAffinity?.attackBaseFire ?? 0.0 * (weaponUpgrade.fireAtkRate ?? 0.0)
-        var lightningAttack = weaponWithAffinity?.attackBaseThunder ?? 0.0 * (weaponUpgrade.thunderAtkRate ?? 0.0)
-        var holyAttack = weaponWithAffinity?.attackBaseDark ?? 0.0 * (weaponUpgrade.darkAtkRate ?? 0.0)
+        var physicalAttack = weaponWithAffinity!.attackBasePhysics * weaponUpgrade!.physicsAtkRate
+        print(weaponUpgrade?.physicsAtkRate ?? 0.0)
+        var magicAttack = weaponWithAffinity!.attackBaseMagic * weaponUpgrade!.magicAtkRate
+        var fireAttack = weaponWithAffinity!.attackBaseFire * weaponUpgrade!.fireAtkRate
+        var lightningAttack = weaponWithAffinity!.attackBaseThunder * weaponUpgrade!.thunderAtkRate
+        var holyAttack = weaponWithAffinity!.attackBaseDark * weaponUpgrade!.darkAtkRate
         
 
 //        var dexScaling = weaponWithAffinity?.correctAgility ?? 0.0 * (weaponUpgrade?.correctAgilityRate ?? 0.0)
@@ -84,38 +73,29 @@ struct CalculationView: View {
 //        var arcScaling = weaponWithAffinity?.correctLuck ?? 0.0 * (weaponUpgrade?.correctLuckRate ?? 0.0)
         
         
-        var elementScalingFD = FetchDescriptor<ElementScaling>(predicate: #Predicate { scaling in
-            scaling.rowId == 10000
-        })
-        elementScalingFD.fetchLimit = 1
-        let elementScalingArr = try? weaponsContainer.mainContext.fetch(elementScalingFD)
-        let elementScaling = elementScalingArr?.first
-        
-        //        let asd = elementScaling?.physical
+        let elementScaling: ElementScaling? = fetchData(modelContext: weaponsContainer.mainContext,
+                                  predicate: #Predicate { scaling in scaling.rowId == 10000 })
         
         
         if ((weaponWithAffinity?.attackBasePhysics) != nil) {
             // calcCorrect
-            var ccalcCorrectFD = FetchDescriptor<CalcCorrectGraph>(predicate: #Predicate { calcCorrect in
-                calcCorrect.graphId == 0
-            })
-            ccalcCorrectFD.fetchLimit = 1
-            let calcCorrect = try? weaponsContainer.mainContext.fetch(ccalcCorrectFD).first
+            let calcCorrectGraph: CalcCorrectGraph? = fetchData(modelContext: weaponsContainer.mainContext,
+                                      predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 })
+            
             //
             let physicalScalingResult = getScalingStat(character: character!,
                                             elementScalingStat: elementScaling!.physical,
-                                            calcCorrectGraph: calcCorrect!,
+                                            calcCorrectGraph: calcCorrectGraph!,
                                             baseAttack: physicalAttack,
                                             weaponAffinity: weaponWithAffinity!,
-                                            weaponUpgrade: weaponUpgrade)
+                                            weaponUpgrade: weaponUpgrade!)
             
             physicalResult = physicalAttack + physicalScalingResult
         }
         
     }
     
-    
-    
+
     // get the corresponding character stat (case .int return Character.intelligence) OR NOT XD
     // need weaponAffinity and upgrade data for corresponding stat scale calc and return it
     func getScalingStat(character: CharacterClass,
@@ -132,27 +112,27 @@ struct CalculationView: View {
             case .str:
                 let characterAttribute = Double(character.stats?.strength ?? 0)
                 let attributeScaling = (weaponAffinity.correctStrength * weaponUpgrade.correctStrengthRate) / 100
-                let elementalScaling = calcScaing(characterAttribute: characterAttribute, pairs: calcCorrectGraph.pairs)
+                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
                 output += baseAttack * attributeScaling * elementalScaling
             case .dex:
                 let characterAttribute = Double(character.stats?.dexterity ?? 0)
                 let attributeScaling = (weaponAffinity.correctAgility * weaponUpgrade.correctAgilityRate) / 100
-                let elementalScaling = calcScaing(characterAttribute: characterAttribute, pairs: calcCorrectGraph.pairs)
+                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
                 output += baseAttack * attributeScaling * elementalScaling
             case .int:
                 let characterAttribute = Double(character.stats?.intelligence ?? 0)
                 let attributeScaling = (weaponAffinity.correctMagic * weaponUpgrade.correctMagicRate) / 100
-                let elementalScaling = calcScaing(characterAttribute: characterAttribute, pairs: calcCorrectGraph.pairs)
+                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
                 output += baseAttack * attributeScaling * elementalScaling
             case .fai:
                 let characterAttribute = Double(character.stats?.faith ?? 0)
                 let attributeScaling = (weaponAffinity.correctFaith * weaponUpgrade.correctFaithRate) / 100
-                let elementalScaling = calcScaing(characterAttribute: characterAttribute, pairs: calcCorrectGraph.pairs)
+                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
                 output += baseAttack * attributeScaling * elementalScaling
             case .arc:
                 let characterAttribute = Double(character.stats?.arcane ?? 0)
                 let attributeScaling = (weaponAffinity.correctLuck * weaponUpgrade.correctLuckRate) / 100
-                let elementalScaling = calcScaing(characterAttribute: characterAttribute, pairs: calcCorrectGraph.pairs)
+                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
                 output += baseAttack * attributeScaling * elementalScaling
             }
         }
@@ -171,7 +151,7 @@ struct CalculationView: View {
         return (pairs[0], pairs[1])
     }
     
-    func calcScaing(characterAttribute: Double, pairs: [Pairs]) -> Double {
+    func calcScaing( pairs: [Pairs], characterAttribute: Double) -> Double {
         
         let (pairMin, pairMax) = getPairs(pairs: pairs, characterAttribute: characterAttribute)
         

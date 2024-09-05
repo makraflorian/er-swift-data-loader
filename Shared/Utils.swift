@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftData
 
 enum Constants {
     static let weaponsFilename = "weapons.store"
@@ -31,4 +32,13 @@ struct DefaultsJSON {
         }
 
     }
+}
+
+// make utils group and move this into a separate file
+func fetchData<T: PersistentModel>(modelContext: ModelContext, predicate: Predicate<T>?) -> T? {
+    var fetchDescriptor = FetchDescriptor<T>(predicate: predicate)
+    fetchDescriptor.fetchLimit = 1
+    let result = try? modelContext.fetch(fetchDescriptor).first
+    
+    return result
 }
