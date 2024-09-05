@@ -175,6 +175,10 @@ struct HostingView: View {
                 NavigationLink(destination: CharacterClassView()) {
                     Text("Character Classes").font(.largeTitle)
                 }
+                Divider()
+                NavigationLink(destination: CalculationView()) {
+                    Text("Calculations").font(.largeTitle)
+                }
             }
         }
     }
