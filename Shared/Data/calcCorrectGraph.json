@@ -1,393 +1,529 @@
-    [
+[
+  {
+    "graphId": 0,
+    "name": "[Scaling] 60 (75%) -> 80 (90%) - Default",
+    "pairs": [
       {
-        "graphId": 0,
-        "name": "[Scaling] 60 (75%) -> 80 (90%) - Default",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 18.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 150.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 25.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 110.00,
-        "adjPt_maxGrowVal0": 1.20,
-        "adjPt_maxGrowVal1": -1.20,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.20
       },
       {
-        "graphId": 1,
-        "name": "[Scaling] 60 (75%) -> 80 (90%) - Heavy",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 150.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 35.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 110.00,
-        "adjPt_maxGrowVal0": 1.20,
-        "adjPt_maxGrowVal1": -1.20,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
+        "stageMaxVal": 18.00,
+        "stageMaxGrowVal": 25.00,
+        "adjPt_maxGrowVal": -1.20
       },
       {
-        "graphId": 2,
-        "name": "[Scaling] 60 (75%) -> 80 (90%) - Keen",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 150.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 35.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 110.00,
-        "adjPt_maxGrowVal0": 1.20,
-        "adjPt_maxGrowVal1": -1.20,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
       },
       {
-        "graphId": 3,
-        "name": "[Scaling] 30 (62%) -> 50 (82%) - Physical Consumable",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 30.00,
-        "stageMaxVal3": 50.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 30.00,
-        "stageMaxGrowVal2": 62.00,
-        "stageMaxGrowVal3": 82.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
       },
       {
-        "graphId": 4,
-        "name": "[Scaling] 50 (80%) -> 80 (95%) - Elemental",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 50.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 40.00,
-        "stageMaxGrowVal2": 80.00,
-        "stageMaxGrowVal3": 95.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 5,
-        "name": "[Scaling] 40 (225%) -> 80 (270%) - Serpent Bow Poison",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 40.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 75.00,
-        "stageMaxGrowVal2": 225.00,
-        "stageMaxGrowVal3": 270.00,
-        "stageMaxGrowVal4": 300.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 6,
-        "name": "[Scaling] 45 (75%) -> 60 (90%) - Status Default",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 25.00,
-        "stageMaxVal2": 45.00,
-        "stageMaxVal3": 60.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 10.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 7,
-        "name": "[Scaling] 60 (75%) -> 80 (90%) - Occult/Innate Arc",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 150.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 35.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 110.00,
-        "adjPt_maxGrowVal0": 1.20,
-        "adjPt_maxGrowVal1": -1.20,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 8,
-        "name": "[Scaling] 60 (75%) -> 80 (90%) - Quality",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 16.00,
-        "stageMaxVal2": 58.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 150.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 25.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 110.00,
-        "adjPt_maxGrowVal0": 1.20,
-        "adjPt_maxGrowVal1": -1.20,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 9,
-        "name": "[Scaling] 60 (80%) -> 80 (95%)",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 20.00,
-        "stageMaxGrowVal2": 80.00,
-        "stageMaxGrowVal3": 95.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.20,
-        "adjPt_maxGrowVal1": -1.20,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 10,
-        "name": "[Scaling] 30 (50%) -> 50 (60%) - Status Consumable",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 15.00,
-        "stageMaxVal2": 30.00,
-        "stageMaxVal3": 50.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 10.00,
-        "stageMaxGrowVal2": 50.00,
-        "stageMaxGrowVal3": 60.00,
-        "stageMaxGrowVal4": 70.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 11,
-        "name": "[Scaling] 45 (15%) -> 60 (18%) - Status Catalyst",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 25.00,
-        "stageMaxVal2": 45.00,
-        "stageMaxVal3": 60.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 6.00,
-        "stageMaxGrowVal2": 15.00,
-        "stageMaxGrowVal3": 18.00,
-        "stageMaxGrowVal4": 20.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 12,
-        "name": "[Scaling] 30 (55%) -> 45 (75%) - Catalyst",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 15.00,
-        "stageMaxVal2": 30.00,
-        "stageMaxVal3": 43.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 10.00,
-        "stageMaxGrowVal2": 55.00,
-        "stageMaxGrowVal3": 75.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 13,
-        "name": "[Scaling] 30 (35%) -> 80 (90%)",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 25.00,
-        "stageMaxVal2": 30.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 0.00,
-        "stageMaxGrowVal2": 35.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 14,
-        "name": "[Scaling] 40 (60%) -> 80 (85%) - Catalyst",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 20.00,
-        "stageMaxVal2": 40.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 40.00,
-        "stageMaxGrowVal2": 60.00,
-        "stageMaxGrowVal3": 85.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 15,
-        "name": "[Scaling] 60 (65%) -> 80 (95%) - Catalyst",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 25.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 25.00,
-        "stageMaxGrowVal2": 65.00,
-        "stageMaxGrowVal3": 95.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
-      },
-      {
-        "graphId": 16,
-        "name": "[Scaling] 60 (75%) -> 80 (90%) - Catalyst",
-        "stageMaxVal0": 1.00,
-        "stageMaxVal1": 18.00,
-        "stageMaxVal2": 60.00,
-        "stageMaxVal3": 80.00,
-        "stageMaxVal4": 99.00,
-        "stageMaxGrowVal0": 0.00,
-        "stageMaxGrowVal1": 20.00,
-        "stageMaxGrowVal2": 75.00,
-        "stageMaxGrowVal3": 90.00,
-        "stageMaxGrowVal4": 100.00,
-        "adjPt_maxGrowVal0": 1.00,
-        "adjPt_maxGrowVal1": 1.00,
-        "adjPt_maxGrowVal2": 1.00,
-        "adjPt_maxGrowVal3": 1.00,
-        "adjPt_maxGrowVal4": 1.00,
-        "init_inclination_soul": 0.00,
-        "adjustment_value": 0.00,
-        "boundry_inclination_soul": 0.00,
-        "boundry_value": 0.00
+        "stageMaxVal": 150.00,
+        "stageMaxGrowVal": 110.00,
+        "adjPt_maxGrowVal": 1.00
       }
     ]
+  },
+  {
+    "graphId": 1,
+    "name": "[Scaling] 60 (75%) -> 80 (90%) - Heavy",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.20
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 35.00,
+        "adjPt_maxGrowVal": -1.20
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 150.00,
+        "stageMaxGrowVal": 110.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 2,
+    "name": "[Scaling] 60 (75%) -> 80 (90%) - Keen",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.20
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 35.00,
+        "adjPt_maxGrowVal": -1.20
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 150.00,
+        "stageMaxGrowVal": 110.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 3,
+    "name": "[Scaling] 30 (62%) -> 50 (82%) - Physical Consumable",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 30.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 30.00,
+        "stageMaxGrowVal": 62.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 50.00,
+        "stageMaxGrowVal": 82.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 4,
+    "name": "[Scaling] 50 (80%) -> 80 (95%) - Elemental",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 40.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 50.00,
+        "stageMaxGrowVal": 80.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 95.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 5,
+    "name": "[Scaling] 40 (225%) -> 80 (270%) - Serpent Bow Poison",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 40.00,
+        "stageMaxGrowVal": 225.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 270.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 300.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 6,
+    "name": "[Scaling] 45 (75%) -> 60 (90%) - Status Default",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 25.00,
+        "stageMaxGrowVal": 10.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 45.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 7,
+    "name": "[Scaling] 60 (75%) -> 80 (90%) - Occult/Innate Arc",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.20
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 35.00,
+        "adjPt_maxGrowVal": -1.20
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 150.00,
+        "stageMaxGrowVal": 110.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 8,
+    "name": "[Scaling] 60 (75%) -> 80 (90%) - Quality",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.20
+      },
+      {
+        "stageMaxVal": 16.00,
+        "stageMaxGrowVal": 25.00,
+        "adjPt_maxGrowVal": -1.20
+      },
+      {
+        "stageMaxVal": 58.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 150.00,
+        "stageMaxGrowVal": 110.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 9,
+    "name": "[Scaling] 60 (80%) -> 80 (95%)",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.20
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 20.00,
+        "adjPt_maxGrowVal": -1.20
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 80.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 95.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 10,
+    "name": "[Scaling] 30 (50%) -> 50 (60%) - Status Consumable",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 15.00,
+        "stageMaxGrowVal": 10.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 30.00,
+        "stageMaxGrowVal": 50.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 50.00,
+        "stageMaxGrowVal": 60.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 70.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 11,
+    "name": "[Scaling] 45 (15%) -> 60 (18%) - Status Catalyst",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 25.00,
+        "stageMaxGrowVal": 6.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 45.00,
+        "stageMaxGrowVal": 15.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 18.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 20.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 12,
+    "name": "[Scaling] 30 (55%) -> 45 (75%) - Catalyst",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 15.00,
+        "stageMaxGrowVal": 10.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 30.00,
+        "stageMaxGrowVal": 55.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 43.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 13,
+    "name": "[Scaling] 30 (35%) -> 80 (90%)",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 25.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 30.00,
+        "stageMaxGrowVal": 35.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 14,
+    "name": "[Scaling] 40 (60%) -> 80 (85%) - Catalyst",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 20.00,
+        "stageMaxGrowVal": 40.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 40.00,
+        "stageMaxGrowVal": 60.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 85.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 15,
+    "name": "[Scaling] 60 (65%) -> 80 (95%) - Catalyst",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 25.00,
+        "stageMaxGrowVal": 25.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 65.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 95.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  },
+  {
+    "graphId": 16,
+    "name": "[Scaling] 60 (75%) -> 80 (90%) - Catalyst",
+    "pairs": [
+      {
+        "stageMaxVal": 1.00,
+        "stageMaxGrowVal": 0.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 18.00,
+        "stageMaxGrowVal": 20.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 60.00,
+        "stageMaxGrowVal": 75.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 80.00,
+        "stageMaxGrowVal": 90.00,
+        "adjPt_maxGrowVal": 1.00
+      },
+      {
+        "stageMaxVal": 99.00,
+        "stageMaxGrowVal": 100.00,
+        "adjPt_maxGrowVal": 1.00
+      }
+    ]
+  }
+]

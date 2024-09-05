@@ -27,10 +27,9 @@ struct CorrectGraphRowView: View {
                     .foregroundStyle(.secondary)
             }
             HStack {
-                Text("\(correctGraph.stageMaxVal0)")
-                Text("\(correctGraph.stageMaxVal1)")
-                Text("\(correctGraph.stageMaxVal3)")
-                Text("\(correctGraph.stageMaxVal4)")
+                Text("\(correctGraph.pairs[0].stageMaxVal)")
+                Text("\(correctGraph.pairs[0].stageMaxGrowVal)")
+                Text("\(correctGraph.pairs[0].adjPt_maxGrowVal)")
             }
             .font(.caption)
             .foregroundStyle(.secondary)

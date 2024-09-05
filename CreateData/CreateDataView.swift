@@ -86,6 +86,8 @@ struct CreateDataView: View {
     var body: some View {
         NavigationStack {
             HStack(alignment: .top) {
+                ///https://www.hackingwithswift.com/quick-start/swiftdata/how-to-optimize-the-performance-of-your-swiftdata-apps
+                //ModelContext has a dedicated fetchCount() method for times when you want to know how many objects would be returned for a given query. This is significantly more efficient than fetching a whole array then reading its count property. - Ohmm.. POG 100% will forgor
                 Text("Number of all data: \(weapons.count + weaponUpgrades.count + elementScaling.count + calcCorrectGraphs.count + characterClasses.count)")
                     .font(.title)
                 Spacer()
