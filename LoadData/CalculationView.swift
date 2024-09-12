@@ -12,6 +12,20 @@ struct CalculationView: View {
     
     @Environment(\.weaponsContainer) var weaponsContainer: ModelContainer
     
+    @State var physicalAttack = 0.0
+    @State var magicAttack = 0.0
+    @State var fireAttack = 0.0
+    @State var lightningAttack = 0.0
+    @State var holyAttack = 0.0
+    
+    @State var physicalScalingResult = 0.0
+    @State var magicScalingResult = 0.0
+    @State var fireScalingResult = 0.0
+    @State var lightningScalingResult = 0.0
+    @State var holyScalingResult = 0.0
+    
+    @State var damageResult = 0.0
+    
     @MainActor
     func mainCalculation() {
         
@@ -29,73 +43,117 @@ struct CalculationView: View {
         
         // MARK: variables (maybe optionals dunno rn)
         
-        
-        
-        var physicalResult: Double = 0.0
-        var magicResult: Double = 0.0
-        var fireResult: Double = 0.0
-        var lightningResult: Double = 0.0
-        var holyResult: Double = 0.0
-        
-        var damageResult: Double = 0.0
-        
-        
+        var physicalResult = 0.0
+        var magicResult = 0.0
+        var fireResult = 0.0
+        var lightningResult = 0.0
+        var holyResult = 0.0
         
         // MARK: FetchDescriptors and DB things
         
         // helper class
         let character: CharacterClass? = fetchData(modelContext: weaponsContainer.mainContext,
-                                  predicate: #Predicate { char in char.classId == 100 })
+                                                   predicate: #Predicate { char in char.classId == 100 })
         
         // dagger
         let weapon: Weapon? = fetchData(modelContext: weaponsContainer.mainContext,
-                                  predicate: #Predicate { weap in weap.weaponId == 1000000 })
+                                        predicate: #Predicate { weap in weap.weaponId == 1000000 })
         
         // cold dagger
         let weaponWithAffinity = weapon?.weaponAffinities?.first(where: { $0.weaponId == 1000900 })
         
         // cold dagger +5
         let weaponUpgrade: WeaponUpgrade? = fetchData(modelContext: weaponsContainer.mainContext,
-                                  predicate: #Predicate { upgrade in upgrade.reinforceTypeId == 905 })
+                                                      predicate: #Predicate { upgrade in upgrade.reinforceTypeId == 905 })
         
         // MARK: shit calculations
-        var physicalAttack = weaponWithAffinity!.attackBasePhysics * weaponUpgrade!.physicsAtkRate
-        print(weaponUpgrade?.physicsAtkRate ?? 0.0)
-        var magicAttack = weaponWithAffinity!.attackBaseMagic * weaponUpgrade!.magicAtkRate
-        var fireAttack = weaponWithAffinity!.attackBaseFire * weaponUpgrade!.fireAtkRate
-        var lightningAttack = weaponWithAffinity!.attackBaseThunder * weaponUpgrade!.thunderAtkRate
-        var holyAttack = weaponWithAffinity!.attackBaseDark * weaponUpgrade!.darkAtkRate
-        
-
-//        var dexScaling = weaponWithAffinity?.correctAgility ?? 0.0 * (weaponUpgrade?.correctAgilityRate ?? 0.0)
-//        var intScaling = weaponWithAffinity?.correctMagic ?? 0.0 * (weaponUpgrade?.correctMagicRate ?? 0.0)
-//        var faiScaling = weaponWithAffinity?.correctFaith ?? 0.0 * (weaponUpgrade?.correctFaithRate ?? 0.0)
-//        var arcScaling = weaponWithAffinity?.correctLuck ?? 0.0 * (weaponUpgrade?.correctLuckRate ?? 0.0)
+        physicalAttack = weaponWithAffinity!.attackBasePhysics * weaponUpgrade!.physicsAtkRate
+        magicAttack = weaponWithAffinity!.attackBaseMagic * weaponUpgrade!.magicAtkRate
+        fireAttack = weaponWithAffinity!.attackBaseFire * weaponUpgrade!.fireAtkRate
+        lightningAttack = weaponWithAffinity!.attackBaseThunder * weaponUpgrade!.thunderAtkRate
+        holyAttack = weaponWithAffinity!.attackBaseDark * weaponUpgrade!.darkAtkRate
         
         
         let elementScaling: ElementScaling? = fetchData(modelContext: weaponsContainer.mainContext,
-                                  predicate: #Predicate { scaling in scaling.rowId == 10000 })
+                                                        predicate: #Predicate { scaling in scaling.rowId == 10000 })
         
         
         if ((weaponWithAffinity?.attackBasePhysics) != nil) {
-            // calcCorrect
             let calcCorrectGraph: CalcCorrectGraph? = fetchData(modelContext: weaponsContainer.mainContext,
-                                      predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 })
+                                                                predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 })
             
-            //
-            let physicalScalingResult = getScalingStat(character: character!,
-                                            elementScalingStat: elementScaling!.physical,
-                                            calcCorrectGraph: calcCorrectGraph!,
-                                            baseAttack: physicalAttack,
-                                            weaponAffinity: weaponWithAffinity!,
-                                            weaponUpgrade: weaponUpgrade!)
+            physicalScalingResult = getScalingStat(character: character!,
+                                                       elementScalingStat: elementScaling!.physical,
+                                                       calcCorrectGraph: calcCorrectGraph!,
+                                                       baseAttack: physicalAttack,
+                                                       weaponAffinity: weaponWithAffinity!,
+                                                       weaponUpgrade: weaponUpgrade!)
             
             physicalResult = physicalAttack + physicalScalingResult
         }
         
+        if ((weaponWithAffinity?.attackBaseMagic) != nil) {
+            let calcCorrectGraph: CalcCorrectGraph? = fetchData(modelContext: weaponsContainer.mainContext,
+                                                                predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 /* affinity.magicGraphid */})
+            
+            magicScalingResult = getScalingStat(character: character!,
+                                                    elementScalingStat: elementScaling!.magic,
+                                                    calcCorrectGraph: calcCorrectGraph!,
+                                                    baseAttack: magicAttack,
+                                                    weaponAffinity: weaponWithAffinity!,
+                                                    weaponUpgrade: weaponUpgrade!)
+            
+            magicResult = magicAttack + magicScalingResult
+        }
+        
+        if ((weaponWithAffinity?.attackBaseFire) != nil) {
+            let calcCorrectGraph: CalcCorrectGraph? = fetchData(modelContext: weaponsContainer.mainContext,
+                                                                predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 })
+            
+            fireScalingResult = getScalingStat(character: character!,
+                                                   elementScalingStat: elementScaling!.fire,
+                                                   calcCorrectGraph: calcCorrectGraph!,
+                                                   baseAttack: fireAttack,
+                                                   weaponAffinity: weaponWithAffinity!,
+                                                   weaponUpgrade: weaponUpgrade!)
+            
+            fireResult = fireAttack + fireScalingResult
+        }
+        
+        if ((weaponWithAffinity?.attackBaseThunder) != nil) {
+            let calcCorrectGraph: CalcCorrectGraph? = fetchData(modelContext: weaponsContainer.mainContext,
+                                                                predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 })
+            
+            lightningScalingResult = getScalingStat(character: character!,
+                                                        elementScalingStat: elementScaling!.lightning,
+                                                        calcCorrectGraph: calcCorrectGraph!,
+                                                        baseAttack: lightningAttack,
+                                                        weaponAffinity: weaponWithAffinity!,
+                                                        weaponUpgrade: weaponUpgrade!)
+            
+            lightningResult = lightningAttack + lightningScalingResult
+        }
+        
+        if ((weaponWithAffinity?.attackBaseDark) != nil) {
+            let calcCorrectGraph: CalcCorrectGraph? = fetchData(modelContext: weaponsContainer.mainContext,
+                                                                predicate: #Predicate { calcCorrect in calcCorrect.graphId == 0 })
+            
+            holyScalingResult = getScalingStat(character: character!,
+                                                   elementScalingStat: elementScaling!.holy,
+                                                   calcCorrectGraph: calcCorrectGraph!,
+                                                   baseAttack: holyAttack,
+                                                   weaponAffinity: weaponWithAffinity!,
+                                                   weaponUpgrade: weaponUpgrade!)
+            
+            holyResult = holyAttack + holyScalingResult
+        }
+        
+        damageResult = physicalResult + magicResult + fireResult + lightningResult + holyResult
+        print(damageResult)
+        
     }
     
-
+    
     // get the corresponding character stat (case .int return Character.intelligence) OR NOT XD
     // need weaponAffinity and upgrade data for corresponding stat scale calc and return it
     func getScalingStat(character: CharacterClass,
@@ -105,36 +163,34 @@ struct CalculationView: View {
                         weaponAffinity: WeaponAffinity,
                         weaponUpgrade: WeaponUpgrade) -> Double {
         
-        var output: Double = 0.0
+        var output = 0.0
         
         for element in elementScalingStat {
+            
+            var characterAttribute = 0.0
+            var attributeScaling = 0.0
+            var elementalScaling = 0.0
+            
             switch element {
             case .str:
-                let characterAttribute = Double(character.stats?.strength ?? 0)
-                let attributeScaling = (weaponAffinity.correctStrength * weaponUpgrade.correctStrengthRate) / 100
-                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
-                output += baseAttack * attributeScaling * elementalScaling
+                characterAttribute = Double(character.stats?.strength ?? 0)
+                attributeScaling = (weaponAffinity.correctStrength * weaponUpgrade.correctStrengthRate) / 100.0
             case .dex:
-                let characterAttribute = Double(character.stats?.dexterity ?? 0)
-                let attributeScaling = (weaponAffinity.correctAgility * weaponUpgrade.correctAgilityRate) / 100
-                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
-                output += baseAttack * attributeScaling * elementalScaling
+                characterAttribute = Double(character.stats?.dexterity ?? 0)
+                attributeScaling = (weaponAffinity.correctAgility * weaponUpgrade.correctAgilityRate) / 100.0
             case .int:
-                let characterAttribute = Double(character.stats?.intelligence ?? 0)
-                let attributeScaling = (weaponAffinity.correctMagic * weaponUpgrade.correctMagicRate) / 100
-                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
-                output += baseAttack * attributeScaling * elementalScaling
+                characterAttribute = Double(character.stats?.intelligence ?? 0)
+                attributeScaling = (weaponAffinity.correctMagic * weaponUpgrade.correctMagicRate) / 100.0
             case .fai:
-                let characterAttribute = Double(character.stats?.faith ?? 0)
-                let attributeScaling = (weaponAffinity.correctFaith * weaponUpgrade.correctFaithRate) / 100
-                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
-                output += baseAttack * attributeScaling * elementalScaling
+                characterAttribute = Double(character.stats?.faith ?? 0)
+                attributeScaling = (weaponAffinity.correctFaith * weaponUpgrade.correctFaithRate) / 100.0
             case .arc:
-                let characterAttribute = Double(character.stats?.arcane ?? 0)
-                let attributeScaling = (weaponAffinity.correctLuck * weaponUpgrade.correctLuckRate) / 100
-                let elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
-                output += baseAttack * attributeScaling * elementalScaling
+                characterAttribute = Double(character.stats?.arcane ?? 0)
+                attributeScaling = (weaponAffinity.correctLuck * weaponUpgrade.correctLuckRate) / 100.0
             }
+            
+            elementalScaling = calcScaing(pairs: calcCorrectGraph.pairs, characterAttribute: characterAttribute)
+            output += baseAttack * attributeScaling * elementalScaling
         }
         
         return output
@@ -164,13 +220,82 @@ struct CalculationView: View {
             growth = 1.0 - pow((1 - ratio), abs(pairMin.adjPt_maxGrowVal))
         }
         
-        return (pairMin.stageMaxGrowVal + ((pairMax.stageMaxGrowVal - pairMin.stageMaxGrowVal) * growth)) / 100
+        return (pairMin.stageMaxGrowVal + ((pairMax.stageMaxGrowVal - pairMin.stageMaxGrowVal) * growth)) / 100.0
     }
     
     var body: some View {
-        Text("Hello, World!")
-        Button("Calc", systemImage: "trash") {
-            mainCalculation()
+        VStack {
+            Text("Weapon Damage Calculation")
+                .font(.title2)
+            Text("Cold Dagger +5 - Str: 14, Dex: 14, Int: 40")
+            Divider()
+            Text("The damage numbers should be:")
+            VStack {
+                HStack {
+                    Text("Physical")
+                    Spacer()
+                    Text("73 + 14")
+                }
+                HStack {
+                    Text("Magic")
+                    Spacer()
+                    Text("62 + 22")
+                }
+                HStack {
+                    Text("Fire")
+                    Spacer()
+                    Text("0 + 0")
+                }
+                HStack {
+                    Text("Lightning")
+                    Spacer()
+                    Text("0 + 0")
+                }
+                HStack {
+                    Text("Holy")
+                    Spacer()
+                    Text("0 + 0")
+                }
+            }
+            .padding(EdgeInsets(top: 20, leading: 60, bottom: 10, trailing: 60))
+            Text("Total Damage: 173")
+                .font(.title3)
+            Divider()
+            Text("Calculated (without rounding):")
+            VStack {
+                HStack {
+                    Text("Physical")
+                    Spacer()
+                    Text("\(physicalAttack) + \(physicalScalingResult)")
+                }
+                HStack {
+                    Text("Magic")
+                    Spacer()
+                    Text("\(magicAttack) + \(magicScalingResult)")
+                }
+                HStack {
+                    Text("Fire")
+                    Spacer()
+                    Text("\(fireAttack) + \(fireScalingResult)")
+                }
+                HStack {
+                    Text("Lightning")
+                    Spacer()
+                    Text("\(lightningAttack) + \(lightningScalingResult)")
+                }
+                HStack {
+                    Text("Holy")
+                    Spacer()
+                    Text("\(holyAttack) + \(holyScalingResult)")
+                }
+            }
+            .padding(EdgeInsets(top: 10, leading: 60, bottom: 10, trailing: 60))
+            Text("Total Damage: \(damageResult)")
+                .font(.title3)
+            Divider()
+            Button("Calc", systemImage: "trash") {
+                mainCalculation()
+            }
         }
     }
 }
