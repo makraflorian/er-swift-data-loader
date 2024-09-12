@@ -7,7 +7,9 @@
 
 import Foundation
 import SwiftData
+import SwiftDataModelMirror
 
+@ModelMirror
 @Model
 class CalcCorrectGraph: Codable, Identifiable {
     // TODO: refactor this name
