@@ -17,7 +17,7 @@ class CalcCorrectGraph: Codable, Identifiable {
         case graphId, name, pairs
     }
     
-    let id: UUID
+    var id: UUID
     var graphId: Int
     var name: String
     var pairs: [Pairs]

@@ -20,7 +20,7 @@ class ElementScaling: Codable, Identifiable {
         case str, dex, int, fai, arc
     }
     
-    let id: UUID
+    var id: UUID
     var rowId: Int
     var physical: [Stats]
     var magic: [Stats]

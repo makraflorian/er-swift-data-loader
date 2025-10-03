@@ -16,7 +16,7 @@ class WeaponUpgrade: Codable, Identifiable {
         case reinforceTypeId, name, physicsAtkRate, magicAtkRate, fireAtkRate, thunderAtkRate, darkAtkRate, correctStrengthRate, correctAgilityRate, correctMagicRate, correctFaithRate, correctLuckRate, baseAtkRate
     }
     
-    let id: UUID
+    var id: UUID
     var reinforceTypeId: Int
     var name: String
     var physicsAtkRate: Double

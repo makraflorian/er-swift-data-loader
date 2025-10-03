@@ -163,5 +163,20 @@
       "faith": 17,
       "arcane": 10
     }
+  },
+  {
+    "classId": 100,
+    "name": "Calculation helper",
+    "level": 35,
+    "stats": {
+      "vigor": 32,
+      "mind": 10,
+      "endurance": 15,
+      "strength": 14,
+      "dexterity": 14,
+      "intelligence": 40,
+      "faith": 17,
+      "arcane": 10
+    }
   }
 ]

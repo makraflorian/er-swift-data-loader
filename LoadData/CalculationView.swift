@@ -223,6 +223,21 @@ struct CalculationView: View {
         return (pairMin.stageMaxGrowVal + ((pairMax.stageMaxGrowVal - pairMin.stageMaxGrowVal) * growth)) / 100.0
     }
     
+    func validateDamage() {
+        // validate the damage based on the stat requirements, if not met apply penalty
+        // i think after the calculation or is it a different calculation??
+    }
+    
+    func getScalingLetters() {
+        // calculate the scaling letters E -> S, based on calcCorrect?
+        //    E: 0 - 24
+        //    D: 25 - 59
+        //    C: 60 - 89
+        //    B: 90 - 139
+        //    A: 140 - 174
+        //    S: 175+
+    }
+    
     var body: some View {
         VStack {
             Text("Weapon Damage Calculation")

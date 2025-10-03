@@ -17,7 +17,7 @@ class Weapon: Codable, Identifiable {
     }
     
     //    @Attribute(.unique)
-    let id: UUID
+    var id: UUID
     var weaponId: Int
     var name: String
     var sortId: Int

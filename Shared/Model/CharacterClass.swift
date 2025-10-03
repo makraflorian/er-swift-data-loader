@@ -16,7 +16,7 @@ class CharacterClass: Codable, Identifiable {
         case classId, name, level, stats
     }
     
-    let id: UUID
+    var id: UUID
     var classId: Int
     var name: String
     var level: Int
